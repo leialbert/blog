@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://leijingwei.com/posts/deploy-your-blog-with-jenkins/</loc>
+    <lastmod>2022-10-05T08:05:05+03:00</lastmod>
+  </url><url>
+    <loc>https://leijingwei.com/tags/jenkins/</loc>
+    <lastmod>2022-10-05T08:05:05+03:00</lastmod>
+  </url><url>
+    <loc>https://leijingwei.com/</loc>
+    <lastmod>2022-10-05T08:05:05+03:00</lastmod>
+  </url><url>
+    <loc>https://leijingwei.com/posts/</loc>
+    <lastmod>2022-10-05T08:05:05+03:00</lastmod>
+  </url><url>
+    <loc>https://leijingwei.com/tags/</loc>
+    <lastmod>2022-10-05T08:05:05+03:00</lastmod>
+  </url><url>
     <loc>https://leijingwei.com/tags/ffmpeg/</loc>
     <lastmod>2022-06-16T23:57:31+08:00</lastmod>
   </url><url>
     <loc>https://leijingwei.com/posts/how-to-use-ffmpeg/</loc>
-    <lastmod>2022-06-16T23:57:31+08:00</lastmod>
-  </url><url>
-    <loc>https://leijingwei.com/</loc>
-    <lastmod>2022-06-16T23:57:31+08:00</lastmod>
-  </url><url>
-    <loc>https://leijingwei.com/posts/</loc>
-    <lastmod>2022-06-16T23:57:31+08:00</lastmod>
-  </url><url>
-    <loc>https://leijingwei.com/tags/</loc>
     <lastmod>2022-06-16T23:57:31+08:00</lastmod>
   </url><url>
     <loc>https://leijingwei.com/posts/how-to-install-v2ray-by-script/</loc>

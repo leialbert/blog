@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Deploy Your Blog with Jenkins - Jingwei&#39;s</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Deploy Your Blog with Jenkins">
+<meta itemprop="description" content="As you know, I built my blog with Hugo, and publish my static html file to github.
+I want to use github pages as my server to run my blog before, but it&rsquo;s really slowly when the visitors visting from China.
+So I changed my mind, I bought a server located at HongKong.
+It&rsquo;s a Debian 11 server with nginx installed.
+Everythime I
+Step 1: Install Jenkins Step 2: Go to Github repository and click on &lsquo;Settings&rsquo; !"><meta itemprop="datePublished" content="2022-10-05T08:05:05+03:00" />
+<meta itemprop="dateModified" content="2022-10-05T08:05:05+03:00" />
+<meta itemprop="wordCount" content="191">
+<meta itemprop="keywords" content="Jenkins," /><meta property="og:title" content="Deploy Your Blog with Jenkins" />
+<meta property="og:description" content="As you know, I built my blog with Hugo, and publish my static html file to github.
+I want to use github pages as my server to run my blog before, but it&rsquo;s really slowly when the visitors visting from China.
+So I changed my mind, I bought a server located at HongKong.
+It&rsquo;s a Debian 11 server with nginx installed.
+Everythime I
+Step 1: Install Jenkins Step 2: Go to Github repository and click on &lsquo;Settings&rsquo; !" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://leijingwei.com/posts/deploy-your-blog-with-jenkins/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-05T08:05:05+03:00" />
+<meta property="article:modified_time" content="2022-10-05T08:05:05+03:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Deploy Your Blog with Jenkins"/>
+<meta name="twitter:description" content="As you know, I built my blog with Hugo, and publish my static html file to github.
+I want to use github pages as my server to run my blog before, but it&rsquo;s really slowly when the visitors visting from China.
+So I changed my mind, I bought a server located at HongKong.
+It&rsquo;s a Debian 11 server with nginx installed.
+Everythime I
+Step 1: Install Jenkins Step 2: Go to Github repository and click on &lsquo;Settings&rsquo; !"/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://leijingwei.com/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://leijingwei.com/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://leijingwei.com/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://leijingwei.com/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://leijingwei.com/">
+				<img src="https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg" alt="Jingwei&#39;s" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://leijingwei.com/">Jingwei&#39;s</a></h1>
+	<div class="site-description"><p>Stay Hungry , Stay Foolish.</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/leialbert/blog" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">05</span>
+							<span class="rest">Oct 2022</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Deploy Your Blog with Jenkins</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p>As you know, I built my blog with Hugo, and publish my static html file to github.</p>
+<p>I want to use github pages as my server to run my blog before, but it&rsquo;s really slowly when the visitors visting from China.</p>
+<p>So I changed my mind, I bought a server located at HongKong.</p>
+<p>It&rsquo;s a Debian 11 server with nginx installed.</p>
+<p>Everythime I</p>
+<h2 id="step-1-install-jenkins">Step 1: Install Jenkins</h2>
+<h2 id="step-2-go-to-github-repository-and-click-on-settings">Step 2: Go to Github repository and click on &lsquo;Settings&rsquo;</h2>
+<p>![image-20221005150122160](/Users/albert/Library/Application Support/typora-user-images/image-20221005150122160.png)</p>
+<h2 id="step-3-add-webhook">Step 3: Add webhook</h2>
+<p>In the <strong>‘Payload URL’</strong> field, paste your Jenkins environment URL. At the end of this URL add <em>/github-webhook/</em>. In the <strong>‘Content type’</strong> select: <em>‘application/json’</em> and leave the <strong>‘Secret’</strong> field empty.</p>
+<p>![image-20221005150425696](/Users/albert/Library/Application Support/typora-user-images/image-20221005150425696.png)</p>
+<h2 id="step-4-in-the-page-which-events-would-you-like-to-trigger-this-webhook">Step 4: In the page <strong>‘Which events would you like to trigger this webhook?’</strong></h2>
+<p>choose <em>‘Let me select individual events.’</em> Then, check <em>‘Pull Requests’</em> and <em>‘Pushes’</em>. At the end of this option, make sure that the <em>‘Active’</em> option is checked and click on <em>‘Add webhook’</em>.</p>
+<h2 id="step-5-configure-jenkins">Step 5: Configure Jenkins</h2>
+<p>![image-20221005161936854](/Users/albert/Library/Application Support/typora-user-images/image-20221005161936854.png)</p>
+<p>![image-20221005162016361](/Users/albert/Library/Application Support/typora-user-images/image-20221005162016361.png)</p>
+<h2 id="step-6-click-on-the-source-code-management-tab">Step 6: Click on the <strong>‘Source Code Management’</strong> tab.</h2>
+<p>Click on Git and paste your GitHub repository URL in the <strong>‘Repository URL’</strong> field.</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/jenkins">Jenkins</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2022  © Copyright [Jingwei's](https://leijingwei.com) |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-86278584-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>
