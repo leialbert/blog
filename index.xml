@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jingwei&#39;s</title>
+    <link>https://leijingwei.com/</link>
+    <description>Recent content on Jingwei&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright [Jingwei&#39;s](https://leijingwei.com)</copyright>
+    <lastBuildDate>Thu, 16 Jun 2022 23:57:31 +0800</lastBuildDate><atom:link href="https://leijingwei.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Use ffmpeg</title>
+      <link>https://leijingwei.com/posts/how-to-use-ffmpeg/</link>
+      <pubDate>Thu, 16 Jun 2022 23:57:31 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/how-to-use-ffmpeg/</guid>
+      <description>ffmpeg -version ffmpeg -i input.mp3 -t 30 output.mp3 ffmpeg -i input.mp3 -ss 00:00:04 -t 30 output.mp3 </description>
+    </item>
+    
+    <item>
+      <title>How to Install V2ray by Script</title>
+      <link>https://leijingwei.com/posts/how-to-install-v2ray-by-script/</link>
+      <pubDate>Wed, 15 Jun 2022 01:18:01 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/how-to-install-v2ray-by-script/</guid>
+      <description>As we all know, there are some limitation when you are suffering the internet. This script may help you!
+bash &amp;lt;(curl -s -L https://git.io/v2ray.sh) Please abide by the laws of the relevant countries and do not participate in political activities.</description>
+    </item>
+    
+    <item>
+      <title>Design brief and mood board</title>
+      <link>https://leijingwei.com/posts/figma/deign-brief-and-modd-board/</link>
+      <pubDate>Wed, 15 Jun 2022 01:10:25 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/figma/deign-brief-and-modd-board/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Part1 Get Start</title>
+      <link>https://leijingwei.com/posts/django/part1-get-start/</link>
+      <pubDate>Sun, 09 Jan 2022 09:18:33 +0300</pubDate>
+      
+      <guid>https://leijingwei.com/posts/django/part1-get-start/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Django初学者完整指南</title>
+      <link>https://leijingwei.com/posts/complete-beginners-guide-to-django/</link>
+      <pubDate>Sun, 09 Jan 2022 08:05:05 +0300</pubDate>
+      
+      <guid>https://leijingwei.com/posts/complete-beginners-guide-to-django/</guid>
+      <description>这是开始学习 Django 的完整初学者指南。 材料分为七个部分。 我们将详细探讨所有基本概念，从安装、开发环境的准备、模型、视图、模板、URL 到更高级的主题，如迁移、测试和部署。 本系列教程采用最新的Django 4.0，Python3.8.x作为开发环境，大部分内容参考：beiginners-guide , 因为原文版本太老，而且是英文的，所以我用中文重新写一遍，方便大家。
+本指南分为以下几个部分：
+Part 1 - 开始
+介绍 为什么用Django 谁在用Django 安装 安装Python3.8.9 安装Virtualenv 安装Django4.0 创建项目 Django应用 Hello World 总结 Part 2 - 基本配置
+介绍 本项目 用例图 类图 线条 模型 迁移模型 试验模型API 模型操作概括 视图，模板和静态文件 django模板引擎 测试首页 静态文件设置 Django默认admin后台介绍 总结 Part 3 - 高级概念
+介绍 基本路由URLs 高级路由URLs 使用路由API URL Patterns 复用模板 表单 如何不用表单 测试表单视图 创建表单的正确方式 渲染bootstrap表单 复用表单模板 增加更多测试 总结 Part 4 - 验证
+介绍 架构 初始化设置 注册 在模板中参考验证用户 测试注册视图 增加邮件字段 改进测试布局 改进注册模板 登出 为验证用户显示菜单 登录 登录未知字段错误 创建自定义模板标签 测试模板标签 密码重置 邮件控制后台 配置路由 密码重置视图 密码重置完成视图 密码重置确认视图 密码重置完成视图 密码修改视图 总结 Part 5 - Django ORM</description>
+    </item>
+    
+    <item>
+      <title>How to Use Hugo</title>
+      <link>https://leijingwei.com/posts/how-to-use-hugo/</link>
+      <pubDate>Sun, 17 Oct 2021 17:04:33 +0300</pubDate>
+      
+      <guid>https://leijingwei.com/posts/how-to-use-hugo/</guid>
+      <description>brew install hugo hugo help hugo new posts/example.rmd hugo server -D hugo -D </description>
+    </item>
+    
+    <item>
+      <title>03 Gunicorn 运行</title>
+      <link>https://leijingwei.com/posts/gunicorn-running/</link>
+      <pubDate>Sun, 11 Apr 2021 21:38:22 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/gunicorn-running/</guid>
+      <description>基本用法 gunicorn [OPTIONS] [WSGI_APP] 这里的WSGI_APP一般格式是模块名称加上变量名称。在20.1.0这个版本后，这个地方变成了一个config文件。 举例来说：文件名为test.py
+def app(environ, start_response): &amp;#34;&amp;#34;&amp;#34;Simplest possible application object&amp;#34;&amp;#34;&amp;#34; data = b&amp;#39;Hello, World!\n&amp;#39; status = &amp;#39;200 OK&amp;#39; response_headers = [ (&amp;#39;Content-type&amp;#39;, &amp;#39;text/plain&amp;#39;), (&amp;#39;Content-Length&amp;#39;, str(len(data))) ] start_response(status, response_headers) return iter([data]) 这时候你要启动程序要用下面的命令：
+gunicorn --workers=2 test:app 这里的变量名称也可以是一个函数调用，比如上面的的例子可以改成这样的：
+def create_app(): app = FrameworkApp() ... return app 这样调用也是一样的效果：
+gunicorn --workers=2 &amp;#39;test:create_app()&amp;#39; 常用配置参数 -c CONFIG, &amp;ndash;config=CONFIG 定义配置文件的路径 -b BIND, &amp;ndash;bind=BIND 定义服务器通信地址和端口 -w WORKERS, &amp;ndash;workers=WORKERS 定义工作进程的数量，这个数量大概每个CPU配置2-4个 -k WORKERCLASS &amp;ndash;worker-class=WORKERCLASS 要运行哪种类型的工作进程。可以设置为（sync, eventlet, gevent, tornado, gthread.</description>
+    </item>
+    
+    <item>
+      <title>02 Gunicorn 安装</title>
+      <link>https://leijingwei.com/posts/gunicorn-installation/</link>
+      <pubDate>Sun, 11 Apr 2021 21:08:16 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/gunicorn-installation/</guid>
+      <description>安装 要求：Python 3.x &amp;gt;= 3.5 安装最新的gunicorn使用下面的命令：
+pip install gunicorn 源代码安装 pip install git+https://github.com/benoitc/gunicorn.git 源码安装有另外一个版本是开发版，用下面的命令：
+pip install -U git+https://github.com/benoitc/gunicorn.git 异步工人（Async Workers） 如果您的应用程序代码在请求处理期间可能需要暂停很长时间，则可能还需要安装Eventlet或Gevent。 查看设计文档，详细了解何时需要考虑其他辅助类型之一。
+$ pip install greenlet # Required for both $ pip install eventlet # For eventlet workers $ pip install gunicorn[eventlet] # Or, using extra $ pip install gevent # For gevent workers $ pip install gunicorn[gevent] # Or, using extra 两者都会自动安装greenlet，如果安装失败，检查下python-dev或者libevent是不是安装了。
+额外包 有些gunicorn选项需要额外的包文件，你可以在安装gunicorn的时候使用[extra]来一起安装。
+gunicorn[eventlet] - Eventlet-based greenlets workers gunicorn[gevent] - Gevent-based greenlets workers gunicorn[gthread] - Threaded workers gunicorn[tornado] - Tornado-based workers, not recommended（不推荐） 如果你运行不止一个gunicorn的实例，proc_name 可以帮你在ps或者top命令下区分开。</description>
+    </item>
+    
+    <item>
+      <title>01 Gunicorn 入门</title>
+      <link>https://leijingwei.com/posts/gunicorn%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sun, 11 Apr 2021 13:46:59 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/gunicorn%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <description>介绍 Gunicorn 就是 Green Unicorn 的缩写，是Unix系统下Python的一个WSGI Http服务器。 它的优点就是比较简单，很容易用在其他web框架上，比如flask 、Django等等。
+安装和启动 pip install gunicorn 使用上面的命令安装好gunicorn，然后写一个简单的python脚本来启动服务
+# myapp.py def app(environ, start_response): data = b&amp;#34;Hello, World!\n&amp;#34; start_response(&amp;#34;200 OK&amp;#34;,[(&amp;#34;Content-Type&amp;#34;,&amp;#34;text/plain&amp;#34;),(&amp;#34;Content-Length&amp;#34;,str(len(data)))]) return iter([data]) # 启动： gunicorn -w 4 myapp:app 运行结果如下：
+[2021-04-11 20:59:22 +0800] [32842] [INFO] Starting gunicorn 20.1.0 [2021-04-11 20:59:22 +0800] [32842] [INFO] Listening at: http://127.0.0.1:8000 (32842) [2021-04-11 20:59:22 +0800] [32842] [INFO] Using worker: sync [2021-04-11 20:59:22 +0800] [32844] [INFO] Booting worker with pid: 32844 [2021-04-11 20:59:22 +0800] [32845] [INFO] Booting worker with pid: 32845 [2021-04-11 20:59:22 +0800] [32846] [INFO] Booting worker with pid: 32846 [2021-04-11 20:59:22 +0800] [32847] [INFO] Booting worker with pid: 32847 部署 Gunicorn是一种WSGI HTTP服务器。使用Gunicorn的时候最好放在HTTP代理服务器后面，官方推荐使用Nginx。 简单的Nginx配置如下：</description>
+    </item>
+    
+    <item>
+      <title>Install V2ray</title>
+      <link>https://leijingwei.com/posts/install-v2ray/</link>
+      <pubDate>Sat, 26 Dec 2020 13:46:59 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/install-v2ray/</guid>
+      <description>I can not write this in Chinese , but I really want to write it down .
+first please get an ECS or VPS which can visit the world outside of the wall.
+CentOS 7.x + Debian Ubuntu 18.x + i choose Cent OS 8.3, so the following content is based on Cent OS 8.
+second download the installation script by this command.
+curl -O https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh then you will get a file which named &amp;lsquo;install-release.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://leijingwei.com/about/</link>
+      <pubDate>Sat, 26 Dec 2020 09:19:37 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/about/</guid>
+      <description>啥人 总结起来就是一个在家带娃炒股养家糊口的人。
+啥经历 入市8年了，4年亏，1年平，最近3年赚。
+尼日利亚呆过两年，大市场小地摊都去过。
+通信voip老兵，手里有95资质，靠这个赚了第一桶金。
+码农，学艺不精的那种，只靠这门收益吃过点闲散饭。
+啥想法 以后炒股养家，等孩子上幼儿园后，发现机会再去创业折腾，折腾的钱从股市盈余里出，折腾回来的钱又投入股市。
+我的联系方式 雪球：https://xueqiu.com/u/realinvestor 微信：juejindys 公众号咱也有，自己搜索“掘金大元帅” github：右上角有地址 </description>
+    </item>
+    
+    <item>
+      <title>CentOS 8.3 升级默认 nginx</title>
+      <link>https://leijingwei.com/posts/nginx-update-centos8/</link>
+      <pubDate>Sat, 26 Dec 2020 00:03:47 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/nginx-update-centos8/</guid>
+      <description>先添加中科大的仓库 vim /etc/yum.repos.d/nginx.repo 里面的内容如下：
+[nginx-mainline] name=nginx mainline repo baseurl=http://mirrors.ustc.edu.cn/nginx/mainline/centos/$releasever/$basearch/ gpgcheck=0 enabled=1 module_hotfixes=true 升级 yum update nginx 查看nginx版本 nginx -v </description>
+    </item>
+    
+    <item>
+      <title>博客开篇</title>
+      <link>https://leijingwei.com/posts/my-first-post/</link>
+      <pubDate>Sat, 26 Dec 2020 00:02:47 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/my-first-post/</guid>
+      <description>想了很久，还是决定重新开始写博客。有些东西还是不适合写在朋友圈，索性写在这里，把关于生活、投资、编程的点滴都记录下来。
+博客建立的过程 我使用的是阿里云的轻服务器，香港地区的，环境是CentOS Linux release 8.3.2011版本，域名本来是我的个人域名，后来用公司的名义备案了，之所以选香港的服务器，还是因为国内确实有些东西不能写，用香港的会好很多，而且很多github上的东西用香港的服务器下载起来更快。
+因为对网站的功能要求不多，纯粹是一个自己写自己看的博客，所以直接选用了生成静态网页最快的hugo来生成网站，以前我习惯用hexo，但说实话，速度实在让人受不了，hugo的速度还是杠杠的，我很满意。至于主题我用的是 ink ,个人觉得还是比较符合我的审美。
+我原本计划用github pages的，但是速度真的很慢，所以搞了个服务器。也不贵，一个月才24元。我将代码上传的github作为中转，而不是直接将本地代码传到服务器，主要是为了避免我本地有时候错误直接上传到服务器会导致网站down机。
+我还添加了Google Analytics来分析网站的流量，其实没什么用，反正大部分访问估计也是自己在看。
+就这样，一个简单的博客就建立了。
+写点什么 由于已经很久没有写代码了，有些命令什么的也比较生疏了，所以写博客的目的很大程度是为了自己方便记录一些文章，方便自己下次用的时候找起来方便。
+另一个原因就是我2020年在家带孩子，也被动的成为了一个专业的投资者了，也确实需要一个网站或者博客来写写文章，记录记录自己投资体系建立的过程，回顾回顾自己的交易历史，写写个股的分析，供自己事后回顾。
+上面两个大概就是我博客的主要内容了，希望能一直坚持下去。
+不用公众号的原因 其实我雪球和公众号的粉丝加起来也有上万人了，但说实话，大部分写公众号的大v们目的和动机都是不纯的，我自然不屑于赚这份钱，做投资还是纯粹点好。
+祝大家安好！ </description>
+    </item>
+    
+  </channel>
+</rss>

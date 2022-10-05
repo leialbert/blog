@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>01 Gunicorn 入门 - Jingwei&#39;s</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="01 Gunicorn 入门">
+<meta itemprop="description" content="Gunicorn的使用方法"><meta itemprop="datePublished" content="2021-04-11T13:46:59+08:00" />
+<meta itemprop="dateModified" content="2021-04-11T13:46:59+08:00" />
+<meta itemprop="wordCount" content="125">
+<meta itemprop="keywords" content="gunicorn," /><meta property="og:title" content="01 Gunicorn 入门" />
+<meta property="og:description" content="Gunicorn的使用方法" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://leijingwei.com/posts/gunicorn%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-04-11T13:46:59+08:00" />
+<meta property="article:modified_time" content="2021-04-11T13:46:59+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="01 Gunicorn 入门"/>
+<meta name="twitter:description" content="Gunicorn的使用方法"/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://leijingwei.com/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://leijingwei.com/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://leijingwei.com/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://leijingwei.com/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://leijingwei.com/">
+				<img src="https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg" alt="Jingwei&#39;s" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://leijingwei.com/">Jingwei&#39;s</a></h1>
+	<div class="site-description"><p>Stay Hungry , Stay Foolish.</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/leialbert/blog" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">11</span>
+							<span class="rest">Apr 2021</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">01 Gunicorn 入门</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<h1 id="介绍">介绍</h1>
+<p>Gunicorn 就是 Green Unicorn 的缩写，是Unix系统下Python的一个WSGI Http服务器。
+它的优点就是比较简单，很容易用在其他web框架上，比如flask 、Django等等。</p>
+<h1 id="安装和启动">安装和启动</h1>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>pip install gunicorn
+</span></span></code></pre></div><p>使用上面的命令安装好gunicorn，然后写一个简单的python脚本来启动服务</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># myapp.py</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">def</span> app(environ, start_response):
+</span></span><span style="display:flex;"><span>    data = <span style="color:#a31515">b</span><span style="color:#a31515">&#34;Hello, World!</span><span style="color:#a31515">\n</span><span style="color:#a31515">&#34;</span>
+</span></span><span style="display:flex;"><span>    start_response(<span style="color:#a31515">&#34;200 OK&#34;</span>,[(<span style="color:#a31515">&#34;Content-Type&#34;</span>,<span style="color:#a31515">&#34;text/plain&#34;</span>),(<span style="color:#a31515">&#34;Content-Length&#34;</span>,str(len(data)))])
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> iter([data])
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># 启动：</span>
+</span></span><span style="display:flex;"><span>gunicorn -w 4 myapp:app
+</span></span></code></pre></div><p>运行结果如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[2021-04-11 20:59:22 +0800] [32842] [INFO] Starting gunicorn 20.1.0
+</span></span><span style="display:flex;"><span>[2021-04-11 20:59:22 +0800] [32842] [INFO] Listening at: http://127.0.0.1:8000 (32842)
+</span></span><span style="display:flex;"><span>[2021-04-11 20:59:22 +0800] [32842] [INFO] Using worker: sync
+</span></span><span style="display:flex;"><span>[2021-04-11 20:59:22 +0800] [32844] [INFO] Booting worker with pid: 32844
+</span></span><span style="display:flex;"><span>[2021-04-11 20:59:22 +0800] [32845] [INFO] Booting worker with pid: 32845
+</span></span><span style="display:flex;"><span>[2021-04-11 20:59:22 +0800] [32846] [INFO] Booting worker with pid: 32846
+</span></span><span style="display:flex;"><span>[2021-04-11 20:59:22 +0800] [32847] [INFO] Booting worker with pid: 32847
+</span></span></code></pre></div><h1 id="部署">部署</h1>
+<p>Gunicorn是一种WSGI HTTP服务器。使用Gunicorn的时候最好放在HTTP代理服务器后面，官方推荐使用Nginx。
+简单的Nginx配置如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>  server {
+</span></span><span style="display:flex;"><span>    listen 80;
+</span></span><span style="display:flex;"><span>    server_name example.org;
+</span></span><span style="display:flex;"><span>    access_log  /var/log/nginx/example.log;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    location / {
+</span></span><span style="display:flex;"><span>        proxy_pass http://127.0.0.1:8000;
+</span></span><span style="display:flex;"><span>        proxy_set_header Host $host;
+</span></span><span style="display:flex;"><span>        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><p>在这里，Nginx被设置为在本地主机端口8000上运行的Gunicorn服务器的反向代理服务器。</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/gunicorn">gunicorn</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2022  © Copyright [Jingwei's](https://leijingwei.com) |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-86278584-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>
