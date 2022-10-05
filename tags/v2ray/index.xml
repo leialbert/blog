@@ -7,17 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright [Jingwei&#39;s](https://leijingwei.com)</copyright>
-    <lastBuildDate>Wed, 15 Jun 2022 01:18:01 +0800</lastBuildDate><atom:link href="https://leijingwei.com/tags/v2ray/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to Install V2ray by Script</title>
-      <link>https://leijingwei.com/posts/how-to-install-v2ray-by-script/</link>
-      <pubDate>Wed, 15 Jun 2022 01:18:01 +0800</pubDate>
-      
-      <guid>https://leijingwei.com/posts/how-to-install-v2ray-by-script/</guid>
-      <description>As we all know, there are some limitation when you are suffering the internet. This script may help you!
-bash &amp;lt;(curl -s -L https://git.io/v2ray.sh) Please abide by the laws of the relevant countries and do not participate in political activities.</description>
-    </item>
-    
+    <lastBuildDate>Sat, 26 Dec 2020 13:46:59 +0800</lastBuildDate><atom:link href="https://leijingwei.com/tags/v2ray/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install V2ray</title>
       <link>https://leijingwei.com/posts/install-v2ray/</link>

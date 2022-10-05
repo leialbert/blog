@@ -2,33 +2,24 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>03 Gunicorn 运行 - Jingwei&#39;s</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta itemprop="name" content="03 Gunicorn 运行">
-<meta itemprop="description" content="基本用法 gunicorn [OPTIONS] [WSGI_APP] 这里的WSGI_APP一般格式是模块名称加上变量名称。在20.1.0这个版本后，这个地方变成了一个config文件。 举例来说：文件名为test.py
-def app(environ, start_response): &#34;&#34;&#34;Simplest possible application object&#34;&#34;&#34; data = b&#39;Hello, World!\n&#39; status = &#39;200 OK&#39; response_headers = [ (&#39;Content-type&#39;, &#39;text/plain&#39;), (&#39;Content-Length&#39;, str(len(data))) ] start_response(status, response_headers) return iter([data]) 这时候你要启动程序要用下面的命令：
-gunicorn --workers=2 test:app 这里的变量名称也可以是一个函数调用，比如上面的的例子可以改成这样的：
-def create_app(): app = FrameworkApp() ... return app 这样调用也是一样的效果：
-gunicorn --workers=2 &#39;test:create_app()&#39; 常用配置参数 -c CONFIG, &ndash;config=CONFIG 定义配置文件的路径 -b BIND, &ndash;bind=BIND 定义服务器通信地址和端口 -w WORKERS, &ndash;workers=WORKERS 定义工作进程的数量，这个数量大概每个CPU配置2-4个 -k WORKERCLASS &ndash;worker-class=WORKERCLASS 要运行哪种类型的工作进程。可以设置为（sync, eventlet, gevent, tornado, gthread."><meta itemprop="datePublished" content="2021-04-11T21:38:22+08:00" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>03 Gunicorn running - Jingwei&#39;s</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="03 Gunicorn running">
+<meta itemprop="description" content="Basic Usage gunicorn [OPTIONS] [WSGI_APP] The general format of WSGI_APP here is the module name plus the variable name. After version 20.1.0, this place became a config file. For example: the file name is test.py
+def app(environ, start_response): &#34;&#34;&#34;Simplest possible application object&#34;&#34;&#34; data = b&#39;Hello, World!\n&#39; status = &#39;200 OK&#39; response_headers = [ (&#39;Content-type&#39;, &#39;text/plain&#39;), (&#39;Content-Length&#39;, str(len(data))) ] start_response(status, response_headers) return iter([data]) At this point you want to start the program with the following command:"><meta itemprop="datePublished" content="2021-04-11T21:38:22+08:00" />
 <meta itemprop="dateModified" content="2021-04-11T21:38:22+08:00" />
-<meta itemprop="wordCount" content="107">
-<meta itemprop="keywords" content="gunicorn," /><meta property="og:title" content="03 Gunicorn 运行" />
-<meta property="og:description" content="基本用法 gunicorn [OPTIONS] [WSGI_APP] 这里的WSGI_APP一般格式是模块名称加上变量名称。在20.1.0这个版本后，这个地方变成了一个config文件。 举例来说：文件名为test.py
-def app(environ, start_response): &#34;&#34;&#34;Simplest possible application object&#34;&#34;&#34; data = b&#39;Hello, World!\n&#39; status = &#39;200 OK&#39; response_headers = [ (&#39;Content-type&#39;, &#39;text/plain&#39;), (&#39;Content-Length&#39;, str(len(data))) ] start_response(status, response_headers) return iter([data]) 这时候你要启动程序要用下面的命令：
-gunicorn --workers=2 test:app 这里的变量名称也可以是一个函数调用，比如上面的的例子可以改成这样的：
-def create_app(): app = FrameworkApp() ... return app 这样调用也是一样的效果：
-gunicorn --workers=2 &#39;test:create_app()&#39; 常用配置参数 -c CONFIG, &ndash;config=CONFIG 定义配置文件的路径 -b BIND, &ndash;bind=BIND 定义服务器通信地址和端口 -w WORKERS, &ndash;workers=WORKERS 定义工作进程的数量，这个数量大概每个CPU配置2-4个 -k WORKERCLASS &ndash;worker-class=WORKERCLASS 要运行哪种类型的工作进程。可以设置为（sync, eventlet, gevent, tornado, gthread." />
+<meta itemprop="wordCount" content="295">
+<meta itemprop="keywords" content="gunicorn," /><meta property="og:title" content="03 Gunicorn running" />
+<meta property="og:description" content="Basic Usage gunicorn [OPTIONS] [WSGI_APP] The general format of WSGI_APP here is the module name plus the variable name. After version 20.1.0, this place became a config file. For example: the file name is test.py
+def app(environ, start_response): &#34;&#34;&#34;Simplest possible application object&#34;&#34;&#34; data = b&#39;Hello, World!\n&#39; status = &#39;200 OK&#39; response_headers = [ (&#39;Content-type&#39;, &#39;text/plain&#39;), (&#39;Content-Length&#39;, str(len(data))) ] start_response(status, response_headers) return iter([data]) At this point you want to start the program with the following command:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://leijingwei.com/posts/gunicorn-running/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-04-11T21:38:22+08:00" />
 <meta property="article:modified_time" content="2021-04-11T21:38:22+08:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="03 Gunicorn 运行"/>
-<meta name="twitter:description" content="基本用法 gunicorn [OPTIONS] [WSGI_APP] 这里的WSGI_APP一般格式是模块名称加上变量名称。在20.1.0这个版本后，这个地方变成了一个config文件。 举例来说：文件名为test.py
-def app(environ, start_response): &#34;&#34;&#34;Simplest possible application object&#34;&#34;&#34; data = b&#39;Hello, World!\n&#39; status = &#39;200 OK&#39; response_headers = [ (&#39;Content-type&#39;, &#39;text/plain&#39;), (&#39;Content-Length&#39;, str(len(data))) ] start_response(status, response_headers) return iter([data]) 这时候你要启动程序要用下面的命令：
-gunicorn --workers=2 test:app 这里的变量名称也可以是一个函数调用，比如上面的的例子可以改成这样的：
-def create_app(): app = FrameworkApp() ... return app 这样调用也是一样的效果：
-gunicorn --workers=2 &#39;test:create_app()&#39; 常用配置参数 -c CONFIG, &ndash;config=CONFIG 定义配置文件的路径 -b BIND, &ndash;bind=BIND 定义服务器通信地址和端口 -w WORKERS, &ndash;workers=WORKERS 定义工作进程的数量，这个数量大概每个CPU配置2-4个 -k WORKERCLASS &ndash;worker-class=WORKERCLASS 要运行哪种类型的工作进程。可以设置为（sync, eventlet, gevent, tornado, gthread."/>
+<meta name="twitter:title" content="03 Gunicorn running"/>
+<meta name="twitter:description" content="Basic Usage gunicorn [OPTIONS] [WSGI_APP] The general format of WSGI_APP here is the module name plus the variable name. After version 20.1.0, this place became a config file. For example: the file name is test.py
+def app(environ, start_response): &#34;&#34;&#34;Simplest possible application object&#34;&#34;&#34; data = b&#39;Hello, World!\n&#39; status = &#39;200 OK&#39; response_headers = [ (&#39;Content-type&#39;, &#39;text/plain&#39;), (&#39;Content-Length&#39;, str(len(data))) ] start_response(status, response_headers) return iter([data]) At this point you want to start the program with the following command:"/>
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://leijingwei.com/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://leijingwei.com/css/main.css" />
@@ -90,15 +81,15 @@ gunicorn --workers=2 &#39;test:create_app()&#39; 常用配置参数 -c CONFIG, &
 					</div>
 				
 				<div class="matter">
-					<h1 class="title">03 Gunicorn 运行</h1>
+					<h1 class="title">03 Gunicorn running</h1>
 				</div>
 			</div>
 					
 			<div class="markdown">
-				<h2 id="基本用法">基本用法</h2>
+				<h2 id="basic-usage">Basic Usage</h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>gunicorn [OPTIONS] [WSGI_APP]
-</span></span></code></pre></div><p>这里的WSGI_APP一般格式是模块名称加上变量名称。在20.1.0这个版本后，这个地方变成了一个config文件。
-举例来说：文件名为test.py</p>
+</span></span></code></pre></div><p>The general format of WSGI_APP here is the module name plus the variable name. After version 20.1.0, this place became a config file.
+For example: the file name is test.py</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00f">def</span> app(environ, start_response):
 </span></span><span style="display:flex;"><span>    <span style="color:#a31515">&#34;&#34;&#34;Simplest possible application object&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    data = <span style="color:#a31515">b</span><span style="color:#a31515">&#39;Hello, World!</span><span style="color:#a31515">\n</span><span style="color:#a31515">&#39;</span>
@@ -109,33 +100,33 @@ gunicorn --workers=2 &#39;test:create_app()&#39; 常用配置参数 -c CONFIG, &
 </span></span><span style="display:flex;"><span>    ]
 </span></span><span style="display:flex;"><span>    start_response(status, response_headers)
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> iter([data])
-</span></span></code></pre></div><p>这时候你要启动程序要用下面的命令：</p>
+</span></span></code></pre></div><p>At this point you want to start the program with the following command:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>gunicorn --workers=2 test:app
-</span></span></code></pre></div><p>这里的变量名称也可以是一个函数调用，比如上面的的例子可以改成这样的：</p>
+</span></span></code></pre></div><p>The variable name here can also be a function call. For example, the above example can be changed to this:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00f">def</span> create_app():
 </span></span><span style="display:flex;"><span>    app = FrameworkApp()
 </span></span><span style="display:flex;"><span>    ...
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> app
-</span></span></code></pre></div><p>这样调用也是一样的效果：</p>
+</span></span></code></pre></div><p>Calling it like this has the same effect:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>gunicorn --workers=2 &#39;test:create_app()&#39;
-</span></span></code></pre></div><h2 id="常用配置参数">常用配置参数</h2>
+</span></span></code></pre></div><h2 id="common-configuration-parameters">Common configuration parameters</h2>
 <ul>
-<li>-c CONFIG, &ndash;config=CONFIG 定义配置文件的路径</li>
-<li>-b BIND, &ndash;bind=BIND 定义服务器通信地址和端口</li>
-<li>-w WORKERS, &ndash;workers=WORKERS 定义工作进程的数量，这个数量大概每个CPU配置2-4个</li>
-<li>-k WORKERCLASS &ndash;worker-class=WORKERCLASS 要运行哪种类型的工作进程。可以设置为（sync, eventlet, gevent, tornado, gthread. sync）中的一种。</li>
-<li>-n APP_NAME, &ndash;name=APP_NAME 如果开启了可以设置进程名。
-其他参数请查阅官方文档吧。</li>
+<li>-c CONFIG, &ndash;config=CONFIG [Define the path to the configuration file]</li>
+<li>-b BIND, &ndash;bind=BIND [Define the server communication address and port]</li>
+<li>-w WORKERS, &ndash;workers=WORKERS [Define the number of worker processes, which is about 2-4 per CPU configuration]</li>
+<li>-k WORKERCLASS &ndash;worker-class=WORKERCLASS [What type of worker process to run. Can be set to one of (sync, eventlet, gevent, tornado, gthread.sync).]</li>
+<li>-n APP_NAME, &ndash;name=APP_NAME [If enabled, you can set the process name.]
+For other parameters, please refer to the official documentation.</li>
 </ul>
-<h2 id="集成">集成</h2>
+<h2 id="intergration">Intergration</h2>
 <h3 id="django">Django</h3>
-<p>如果没有定义的话，gunicorn 会自动去调用一个WSGI的应用程序，比如一个典型的Django程序，gunicorn的格式如下：</p>
+<p>If not defined, gunicorn will automatically call a WSGI application, such as a typical Django program. The format of gunicorn is as follows:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>gunicorn myproject.wsgi
-</span></span></code></pre></div><p>部署起来相当方便哦。
-上面要注意的是，你的项目要在python PATH下，最简单的办法就是和Django目录下的manage.py放在同一个目录。</p>
-<p>还有个配置，这个可以直接配置Django settings中的内容：</p>
+</span></span></code></pre></div><p>It&rsquo;s pretty easy to deploy.
+It should be noted above that your project should be in the python PATH. The easiest way is to put it in the same directory as manage.py in the Django directory.</p>
+<p>There is also a configuration, which can directly configure the content in Django settings:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>gunicorn --env DJANGO_SETTINGS_MODULE=myproject.settings myproject.wsgi
-</span></span></code></pre></div><h3 id="粘贴部署">粘贴部署</h3>
+</span></span></code></pre></div><h3 id="paste-and-deployment">Paste and deployment</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>gunicorn --paste development.ini -b :8080 --chdir /path/to/project
 </span></span><span style="display:flex;"><span>gunicorn --paste development.ini#admin -b :8080 --chdir /path/to/project
 </span></span></code></pre></div>

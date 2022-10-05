@@ -10,16 +10,15 @@
     <lastBuildDate>Wed, 05 Oct 2022 08:05:05 +0300</lastBuildDate><atom:link href="https://leijingwei.com/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deploy Your Blog with Jenkins</title>
-      <link>https://leijingwei.com/posts/deploy-your-blog-with-jenkins/</link>
+      <link>https://leijingwei.com/posts/deploy-your-blog-with-jenkins-automatically/</link>
       <pubDate>Wed, 05 Oct 2022 08:05:05 +0300</pubDate>
       
-      <guid>https://leijingwei.com/posts/deploy-your-blog-with-jenkins/</guid>
+      <guid>https://leijingwei.com/posts/deploy-your-blog-with-jenkins-automatically/</guid>
       <description>As you know, I built my blog with Hugo, and publish my static html file to github.
-I want to use github pages as my server to run my blog before, but it&amp;rsquo;s really slowly when the visitors visting from China.
+I used to use github pages as my server to run my blog before, but it&amp;rsquo;s really slowly when the visitors visting from China.
 So I changed my mind, I bought a server located at HongKong.
 It&amp;rsquo;s a Debian 11 server with nginx installed.
-Everythime I
-Step 1: Install Jenkins Step 2: Go to Github repository and click on &amp;lsquo;Settings&amp;rsquo; !</description>
+Step 1: Install Jenkins There are a lot ways to install Jenkins, but I am using the following commands for my Debian OS.</description>
     </item>
     
   </channel>

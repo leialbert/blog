@@ -27,24 +27,6 @@
     </item>
     
     <item>
-      <title>v2ray</title>
-      <link>https://leijingwei.com/tags/v2ray/</link>
-      <pubDate>Wed, 15 Jun 2022 01:18:01 +0800</pubDate>
-      
-      <guid>https://leijingwei.com/tags/v2ray/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>figma</title>
-      <link>https://leijingwei.com/tags/figma/</link>
-      <pubDate>Wed, 15 Jun 2022 01:10:25 +0800</pubDate>
-      
-      <guid>https://leijingwei.com/tags/figma/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>django</title>
       <link>https://leijingwei.com/tags/django/</link>
       <pubDate>Sun, 09 Jan 2022 09:18:33 +0300</pubDate>
@@ -68,6 +50,15 @@
       <pubDate>Sun, 11 Apr 2021 21:38:22 +0800</pubDate>
       
       <guid>https://leijingwei.com/tags/gunicorn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>v2ray</title>
+      <link>https://leijingwei.com/tags/v2ray/</link>
+      <pubDate>Sat, 26 Dec 2020 13:46:59 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/tags/v2ray/</guid>
       <description></description>
     </item>
     

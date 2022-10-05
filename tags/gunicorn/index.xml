@@ -9,42 +9,35 @@
     <copyright>© Copyright [Jingwei&#39;s](https://leijingwei.com)</copyright>
     <lastBuildDate>Sun, 11 Apr 2021 21:38:22 +0800</lastBuildDate><atom:link href="https://leijingwei.com/tags/gunicorn/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>03 Gunicorn 运行</title>
+      <title>03 Gunicorn running</title>
       <link>https://leijingwei.com/posts/gunicorn-running/</link>
       <pubDate>Sun, 11 Apr 2021 21:38:22 +0800</pubDate>
       
       <guid>https://leijingwei.com/posts/gunicorn-running/</guid>
-      <description>基本用法 gunicorn [OPTIONS] [WSGI_APP] 这里的WSGI_APP一般格式是模块名称加上变量名称。在20.1.0这个版本后，这个地方变成了一个config文件。 举例来说：文件名为test.py
-def app(environ, start_response): &amp;#34;&amp;#34;&amp;#34;Simplest possible application object&amp;#34;&amp;#34;&amp;#34; data = b&amp;#39;Hello, World!\n&amp;#39; status = &amp;#39;200 OK&amp;#39; response_headers = [ (&amp;#39;Content-type&amp;#39;, &amp;#39;text/plain&amp;#39;), (&amp;#39;Content-Length&amp;#39;, str(len(data))) ] start_response(status, response_headers) return iter([data]) 这时候你要启动程序要用下面的命令：
-gunicorn --workers=2 test:app 这里的变量名称也可以是一个函数调用，比如上面的的例子可以改成这样的：
-def create_app(): app = FrameworkApp() ... return app 这样调用也是一样的效果：
-gunicorn --workers=2 &amp;#39;test:create_app()&amp;#39; 常用配置参数 -c CONFIG, &amp;ndash;config=CONFIG 定义配置文件的路径 -b BIND, &amp;ndash;bind=BIND 定义服务器通信地址和端口 -w WORKERS, &amp;ndash;workers=WORKERS 定义工作进程的数量，这个数量大概每个CPU配置2-4个 -k WORKERCLASS &amp;ndash;worker-class=WORKERCLASS 要运行哪种类型的工作进程。可以设置为（sync, eventlet, gevent, tornado, gthread.</description>
+      <description>Basic Usage gunicorn [OPTIONS] [WSGI_APP] The general format of WSGI_APP here is the module name plus the variable name. After version 20.1.0, this place became a config file. For example: the file name is test.py
+def app(environ, start_response): &amp;#34;&amp;#34;&amp;#34;Simplest possible application object&amp;#34;&amp;#34;&amp;#34; data = b&amp;#39;Hello, World!\n&amp;#39; status = &amp;#39;200 OK&amp;#39; response_headers = [ (&amp;#39;Content-type&amp;#39;, &amp;#39;text/plain&amp;#39;), (&amp;#39;Content-Length&amp;#39;, str(len(data))) ] start_response(status, response_headers) return iter([data]) At this point you want to start the program with the following command:</description>
     </item>
     
     <item>
-      <title>02 Gunicorn 安装</title>
+      <title>02 Gunicorn installation</title>
       <link>https://leijingwei.com/posts/gunicorn-installation/</link>
       <pubDate>Sun, 11 Apr 2021 21:08:16 +0800</pubDate>
       
       <guid>https://leijingwei.com/posts/gunicorn-installation/</guid>
-      <description>安装 要求：Python 3.x &amp;gt;= 3.5 安装最新的gunicorn使用下面的命令：
-pip install gunicorn 源代码安装 pip install git+https://github.com/benoitc/gunicorn.git 源码安装有另外一个版本是开发版，用下面的命令：
-pip install -U git+https://github.com/benoitc/gunicorn.git 异步工人（Async Workers） 如果您的应用程序代码在请求处理期间可能需要暂停很长时间，则可能还需要安装Eventlet或Gevent。 查看设计文档，详细了解何时需要考虑其他辅助类型之一。
-$ pip install greenlet # Required for both $ pip install eventlet # For eventlet workers $ pip install gunicorn[eventlet] # Or, using extra $ pip install gevent # For gevent workers $ pip install gunicorn[gevent] # Or, using extra 两者都会自动安装greenlet，如果安装失败，检查下python-dev或者libevent是不是安装了。
-额外包 有些gunicorn选项需要额外的包文件，你可以在安装gunicorn的时候使用[extra]来一起安装。
-gunicorn[eventlet] - Eventlet-based greenlets workers gunicorn[gevent] - Gevent-based greenlets workers gunicorn[gthread] - Threaded workers gunicorn[tornado] - Tornado-based workers, not recommended（不推荐） 如果你运行不止一个gunicorn的实例，proc_name 可以帮你在ps或者top命令下区分开。</description>
+      <description>Installation Requirement ：Python 3.x &amp;gt;= 3.5 Install the latest gunicorn with the command as below：
+pip install gunicorn Installation from source code pip install git+https://github.com/benoitc/gunicorn.git Installation DEV version from source code
+pip install -U git+https://github.com/benoitc/gunicorn.git Async Workers If your application code may need to pause for a long time during request processing, you may also need to install Eventlet or Gevent. Check out the design documentation for details on when one of the other assist types needs to be considered.</description>
     </item>
     
     <item>
-      <title>01 Gunicorn 入门</title>
-      <link>https://leijingwei.com/posts/gunicorn%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <title>01 Gunicorn quick start</title>
+      <link>https://leijingwei.com/posts/the-usage-of-gunicorn/</link>
       <pubDate>Sun, 11 Apr 2021 13:46:59 +0800</pubDate>
       
-      <guid>https://leijingwei.com/posts/gunicorn%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
-      <description>介绍 Gunicorn 就是 Green Unicorn 的缩写，是Unix系统下Python的一个WSGI Http服务器。 它的优点就是比较简单，很容易用在其他web框架上，比如flask 、Django等等。
-安装和启动 pip install gunicorn 使用上面的命令安装好gunicorn，然后写一个简单的python脚本来启动服务
-# myapp.py def app(environ, start_response): data = b&amp;#34;Hello, World!\n&amp;#34; start_response(&amp;#34;200 OK&amp;#34;,[(&amp;#34;Content-Type&amp;#34;,&amp;#34;text/plain&amp;#34;),(&amp;#34;Content-Length&amp;#34;,str(len(data)))]) return iter([data]) # 启动： gunicorn -w 4 myapp:app 运行结果如下：
-[2021-04-11 20:59:22 +0800] [32842] [INFO] Starting gunicorn 20.1.0 [2021-04-11 20:59:22 +0800] [32842] [INFO] Listening at: http://127.0.0.1:8000 (32842) [2021-04-11 20:59:22 +0800] [32842] [INFO] Using worker: sync [2021-04-11 20:59:22 +0800] [32844] [INFO] Booting worker with pid: 32844 [2021-04-11 20:59:22 +0800] [32845] [INFO] Booting worker with pid: 32845 [2021-04-11 20:59:22 +0800] [32846] [INFO] Booting worker with pid: 32846 [2021-04-11 20:59:22 +0800] [32847] [INFO] Booting worker with pid: 32847 部署 Gunicorn是一种WSGI HTTP服务器。使用Gunicorn的时候最好放在HTTP代理服务器后面，官方推荐使用Nginx。 简单的Nginx配置如下：</description>
+      <guid>https://leijingwei.com/posts/the-usage-of-gunicorn/</guid>
+      <description>About Gunicorn is the abbreviation of Green Unicorn, a WSGI Http server for Python under Unix systems. Its advantage is that it is relatively simple and easy to use on other web frameworks, such as flask, Django, etc.
+Install &amp;amp; Start pip install gunicorn Install gunicorn using the above command, then write a simple python script to start the service
+# myapp.py def app(environ, start_response): data = b&amp;#34;Hello, World!\n&amp;#34; start_response(&amp;#34;200 OK&amp;#34;,[(&amp;#34;Content-Type&amp;#34;,&amp;#34;text/plain&amp;#34;),(&amp;#34;Content-Length&amp;#34;,str(len(data)))]) return iter([data]) # Start： gunicorn -w 4 myapp:app Console output：</description>
     </item>
     
   </channel>

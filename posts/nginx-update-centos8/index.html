@@ -2,21 +2,21 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>CentOS 8.3 升级默认 nginx - Jingwei&#39;s</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta itemprop="name" content="CentOS 8.3 升级默认 nginx">
-<meta itemprop="description" content="CentOS 8.3默认yum的nginx版本太低了"><meta itemprop="datePublished" content="2020-12-26T00:03:47+08:00" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>CentOS 8.3 upgrade default nginx - Jingwei&#39;s</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="CentOS 8.3 upgrade default nginx">
+<meta itemprop="description" content="CentOS 8.3 default yum&#39;nginx version is too low"><meta itemprop="datePublished" content="2020-12-26T00:03:47+08:00" />
 <meta itemprop="dateModified" content="2020-12-26T00:03:47+08:00" />
-<meta itemprop="wordCount" content="19">
-<meta itemprop="keywords" content="blog," /><meta property="og:title" content="CentOS 8.3 升级默认 nginx" />
-<meta property="og:description" content="CentOS 8.3默认yum的nginx版本太低了" />
+<meta itemprop="wordCount" content="41">
+<meta itemprop="keywords" content="blog," /><meta property="og:title" content="CentOS 8.3 upgrade default nginx" />
+<meta property="og:description" content="CentOS 8.3 default yum&#39;nginx version is too low" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://leijingwei.com/posts/nginx-update-centos8/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-12-26T00:03:47+08:00" />
 <meta property="article:modified_time" content="2020-12-26T00:03:47+08:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="CentOS 8.3 升级默认 nginx"/>
-<meta name="twitter:description" content="CentOS 8.3默认yum的nginx版本太低了"/>
+<meta name="twitter:title" content="CentOS 8.3 upgrade default nginx"/>
+<meta name="twitter:description" content="CentOS 8.3 default yum&#39;nginx version is too low"/>
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://leijingwei.com/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://leijingwei.com/css/main.css" />
@@ -78,23 +78,23 @@
 					</div>
 				
 				<div class="matter">
-					<h1 class="title">CentOS 8.3 升级默认 nginx</h1>
+					<h1 class="title">CentOS 8.3 upgrade default nginx</h1>
 				</div>
 			</div>
 					
 			<div class="markdown">
-				<h2 id="先添加中科大的仓库">先添加中科大的仓库</h2>
+				<h2 id="add-the-repo-of-university-of-science-and-technology-of-china">Add the repo of University of Science and Technology of China</h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>vim /etc/yum.repos.d/nginx.repo
-</span></span></code></pre></div><p>里面的内容如下：</p>
+</span></span></code></pre></div><p>Add the contents to the file：</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[nginx-mainline]
 </span></span><span style="display:flex;"><span>name=nginx mainline repo
 </span></span><span style="display:flex;"><span>baseurl=http://mirrors.ustc.edu.cn/nginx/mainline/centos/$releasever/$basearch/
 </span></span><span style="display:flex;"><span>gpgcheck=0
 </span></span><span style="display:flex;"><span>enabled=1
 </span></span><span style="display:flex;"><span>module_hotfixes=true
-</span></span></code></pre></div><h2 id="升级">升级</h2>
+</span></span></code></pre></div><h2 id="update-the-nginx">Update the nginx</h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>yum update nginx
-</span></span></code></pre></div><h2 id="查看nginx版本">查看nginx版本</h2>
+</span></span></code></pre></div><h2 id="check-the-version-of-the-nginx">Check the version of the nginx</h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>nginx -v
 </span></span></code></pre></div>
 			</div>
