@@ -1,123 +1,182 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>How to Use ffmpeg - Jingwei&#39;s</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta itemprop="name" content="How to Use ffmpeg">
-<meta itemprop="description" content="ffmpeg -version ffmpeg -i input.mp3 -t 30 output.mp3 ffmpeg -i input.mp3 -ss 00:00:04 -t 30 output.mp3 "><meta itemprop="datePublished" content="2022-06-16T23:57:31+08:00" />
-<meta itemprop="dateModified" content="2022-06-16T23:57:31+08:00" />
-<meta itemprop="wordCount" content="16">
-<meta itemprop="keywords" content="ffmpeg," /><meta property="og:title" content="How to Use ffmpeg" />
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>How to Use ffmpeg | Jingwei&#39;s</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="ffmpeg -version ffmpeg -i input.mp3 -t 30 output.mp3 ffmpeg -i input.mp3 -ss 00:00:04 -t 30 output.mp3 ">
+    <meta name="generator" content="Hugo 0.101.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="How to Use ffmpeg" />
 <meta property="og:description" content="ffmpeg -version ffmpeg -i input.mp3 -t 30 output.mp3 ffmpeg -i input.mp3 -ss 00:00:04 -t 30 output.mp3 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://leijingwei.com/posts/how-to-use-ffmpeg/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-06-16T23:57:31+08:00" />
 <meta property="article:modified_time" content="2022-06-16T23:57:31+08:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="name" content="How to Use ffmpeg">
+<meta itemprop="description" content="ffmpeg -version ffmpeg -i input.mp3 -t 30 output.mp3 ffmpeg -i input.mp3 -ss 00:00:04 -t 30 output.mp3 "><meta itemprop="datePublished" content="2022-06-16T23:57:31+08:00" />
+<meta itemprop="dateModified" content="2022-06-16T23:57:31+08:00" />
+<meta itemprop="wordCount" content="16">
+<meta itemprop="keywords" content="ffmpeg," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to Use ffmpeg"/>
 <meta name="twitter:description" content="ffmpeg -version ffmpeg -i input.mp3 -t 30 output.mp3 ffmpeg -i input.mp3 -ss 00:00:04 -t 30 output.mp3 "/>
-<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" media="screen" href="https://leijingwei.com/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="https://leijingwei.com/css/main.css" />
 
-        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://leijingwei.com/css/dark.css" />
-
-	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-		<script src="https://leijingwei.com/js/main.js"></script>
-</head>
-
-<body>
-	<div class="container wrapper">
-		<div class="header">
 	
-		<div class="avatar">
-			<a href="https://leijingwei.com/">
-				<img src="https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg" alt="Jingwei&#39;s" />
-			</a>
-		</div>
-	
-	<h1 class="site-title"><a href="https://leijingwei.com/">Jingwei&#39;s</a></h1>
-	<div class="site-description"><p>Stay Hungry , Stay Foolish.</p><nav class="nav social">
-			<ul class="flat"><li><a href="https://github.com/leialbert/blog" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
-		</nav>
-	</div>
+  </head>
 
-	<nav class="nav">
-		<ul class="flat">
-			
-			<li>
-				<a href="/">Home</a>
-			</li>
-			
-			<li>
-				<a href="/posts">All posts</a>
-			</li>
-			
-			<li>
-				<a href="/about">About</a>
-			</li>
-			
-			<li>
-				<a href="/tags">Tags</a>
-			</li>
-			
-		</ul>
-	</nav>
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Jingwei&#39;s
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/" title="Home page">
+              Home
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts" title="All posts page">
+              All posts
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/tags" title="Tags page">
+              Tags
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
 </div>
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
 
 
-		<div class="post">
-			<div class="post-header">
-				
-					<div class="meta">
-						<div class="date">
-							<span class="day">16</span>
-							<span class="rest">Jun 2022</span>
-						</div>
-					</div>
-				
-				<div class="matter">
-					<h1 class="title">How to Use ffmpeg</h1>
-				</div>
-			</div>
-					
-			<div class="markdown">
-				<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ffmpeg -version
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">How to Use ffmpeg</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2022-06-16T23:57:31+08:00">June 16, 2022</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ffmpeg -version
 </span></span><span style="display:flex;"><span>ffmpeg -i input.mp3 -t 30 output.mp3
 </span></span><span style="display:flex;"><span>ffmpeg -i input.mp3 -ss 00:00:04 -t 30 output.mp3
-</span></span></code></pre></div>
-			</div>
+</span></span></code></pre></div><ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/ffmpeg" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">ffmpeg</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
 
-			<div class="tags">
-				
-					
-						<ul class="flat">
-							
-							<li><a href="/tags/ffmpeg">ffmpeg</a></li>
-							
-						</ul>
-					
-				
-			</div></div>
-	</div>
-	<div class="footer wrapper">
-	<nav class="nav">
-		<div>2022  © Copyright [Jingwei's](https://leijingwei.com) |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
-	</nav>
-</div>
+    <aside class="w-30-l mt6-l">
 
 
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-86278584-8', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-<script>feather.replace()</script>
-</body>
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://leijingwei.com/" >
+    &copy;  © Copyright [Jingwei's](https://leijingwei.com) 2022 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div></div>
+  </div>
+</footer>
+
+  </body>
 </html>

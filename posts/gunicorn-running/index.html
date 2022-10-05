@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>03 Gunicorn running - Jingwei&#39;s</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta itemprop="name" content="03 Gunicorn running">
-<meta itemprop="description" content="Basic Usage gunicorn [OPTIONS] [WSGI_APP] The general format of WSGI_APP here is the module name plus the variable name. After version 20.1.0, this place became a config file. For example: the file name is test.py
-def app(environ, start_response): &#34;&#34;&#34;Simplest possible application object&#34;&#34;&#34; data = b&#39;Hello, World!\n&#39; status = &#39;200 OK&#39; response_headers = [ (&#39;Content-type&#39;, &#39;text/plain&#39;), (&#39;Content-Length&#39;, str(len(data))) ] start_response(status, response_headers) return iter([data]) At this point you want to start the program with the following command:"><meta itemprop="datePublished" content="2021-04-11T21:38:22+08:00" />
-<meta itemprop="dateModified" content="2021-04-11T21:38:22+08:00" />
-<meta itemprop="wordCount" content="295">
-<meta itemprop="keywords" content="gunicorn," /><meta property="og:title" content="03 Gunicorn running" />
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>03 Gunicorn running | Jingwei&#39;s</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Basic Usage gunicorn [OPTIONS] [WSGI_APP] The general format of WSGI_APP here is the module name plus the variable name. After version 20.1.0, this place became a config file. For example: the file name is test.py
+def app(environ, start_response): &#34;&#34;&#34;Simplest possible application object&#34;&#34;&#34; data = b&#39;Hello, World!\n&#39; status = &#39;200 OK&#39; response_headers = [ (&#39;Content-type&#39;, &#39;text/plain&#39;), (&#39;Content-Length&#39;, str(len(data))) ] start_response(status, response_headers) return iter([data]) At this point you want to start the program with the following command:">
+    <meta name="generator" content="Hugo 0.101.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="03 Gunicorn running" />
 <meta property="og:description" content="Basic Usage gunicorn [OPTIONS] [WSGI_APP] The general format of WSGI_APP here is the module name plus the variable name. After version 20.1.0, this place became a config file. For example: the file name is test.py
 def app(environ, start_response): &#34;&#34;&#34;Simplest possible application object&#34;&#34;&#34; data = b&#39;Hello, World!\n&#39; status = &#39;200 OK&#39; response_headers = [ (&#39;Content-type&#39;, &#39;text/plain&#39;), (&#39;Content-Length&#39;, str(len(data))) ] start_response(status, response_headers) return iter([data]) At this point you want to start the program with the following command:" />
 <meta property="og:type" content="article" />
@@ -16,77 +36,115 @@ def app(environ, start_response): &#34;&#34;&#34;Simplest possible application o
 <meta property="article:published_time" content="2021-04-11T21:38:22+08:00" />
 <meta property="article:modified_time" content="2021-04-11T21:38:22+08:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="name" content="03 Gunicorn running">
+<meta itemprop="description" content="Basic Usage gunicorn [OPTIONS] [WSGI_APP] The general format of WSGI_APP here is the module name plus the variable name. After version 20.1.0, this place became a config file. For example: the file name is test.py
+def app(environ, start_response): &#34;&#34;&#34;Simplest possible application object&#34;&#34;&#34; data = b&#39;Hello, World!\n&#39; status = &#39;200 OK&#39; response_headers = [ (&#39;Content-type&#39;, &#39;text/plain&#39;), (&#39;Content-Length&#39;, str(len(data))) ] start_response(status, response_headers) return iter([data]) At this point you want to start the program with the following command:"><meta itemprop="datePublished" content="2021-04-11T21:38:22+08:00" />
+<meta itemprop="dateModified" content="2021-04-11T21:38:22+08:00" />
+<meta itemprop="wordCount" content="295">
+<meta itemprop="keywords" content="gunicorn," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="03 Gunicorn running"/>
 <meta name="twitter:description" content="Basic Usage gunicorn [OPTIONS] [WSGI_APP] The general format of WSGI_APP here is the module name plus the variable name. After version 20.1.0, this place became a config file. For example: the file name is test.py
 def app(environ, start_response): &#34;&#34;&#34;Simplest possible application object&#34;&#34;&#34; data = b&#39;Hello, World!\n&#39; status = &#39;200 OK&#39; response_headers = [ (&#39;Content-type&#39;, &#39;text/plain&#39;), (&#39;Content-Length&#39;, str(len(data))) ] start_response(status, response_headers) return iter([data]) At this point you want to start the program with the following command:"/>
-<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" media="screen" href="https://leijingwei.com/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="https://leijingwei.com/css/main.css" />
 
-        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://leijingwei.com/css/dark.css" />
-
-	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-		<script src="https://leijingwei.com/js/main.js"></script>
-</head>
-
-<body>
-	<div class="container wrapper">
-		<div class="header">
 	
-		<div class="avatar">
-			<a href="https://leijingwei.com/">
-				<img src="https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg" alt="Jingwei&#39;s" />
-			</a>
-		</div>
-	
-	<h1 class="site-title"><a href="https://leijingwei.com/">Jingwei&#39;s</a></h1>
-	<div class="site-description"><p>Stay Hungry , Stay Foolish.</p><nav class="nav social">
-			<ul class="flat"><li><a href="https://github.com/leialbert/blog" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
-		</nav>
-	</div>
+  </head>
 
-	<nav class="nav">
-		<ul class="flat">
-			
-			<li>
-				<a href="/">Home</a>
-			</li>
-			
-			<li>
-				<a href="/posts">All posts</a>
-			</li>
-			
-			<li>
-				<a href="/about">About</a>
-			</li>
-			
-			<li>
-				<a href="/tags">Tags</a>
-			</li>
-			
-		</ul>
-	</nav>
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Jingwei&#39;s
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/" title="Home page">
+              Home
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts" title="All posts page">
+              All posts
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/tags" title="Tags page">
+              Tags
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
 </div>
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
 
 
-		<div class="post">
-			<div class="post-header">
-				
-					<div class="meta">
-						<div class="date">
-							<span class="day">11</span>
-							<span class="rest">Apr 2021</span>
-						</div>
-					</div>
-				
-				<div class="matter">
-					<h1 class="title">03 Gunicorn running</h1>
-				</div>
-			</div>
-					
-			<div class="markdown">
-				<h2 id="basic-usage">Basic Usage</h2>
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">03 Gunicorn running</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2021-04-11T21:38:22+08:00">April 11, 2021</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="basic-usage">Basic Usage</h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>gunicorn [OPTIONS] [WSGI_APP]
 </span></span></code></pre></div><p>The general format of WSGI_APP here is the module name plus the variable name. After version 20.1.0, this place became a config file.
 For example: the file name is test.py</p>
@@ -129,38 +187,55 @@ It should be noted above that your project should be in the python PATH. The eas
 </span></span></code></pre></div><h3 id="paste-and-deployment">Paste and deployment</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>gunicorn --paste development.ini -b :8080 --chdir /path/to/project
 </span></span><span style="display:flex;"><span>gunicorn --paste development.ini#admin -b :8080 --chdir /path/to/project
-</span></span></code></pre></div>
-			</div>
+</span></span></code></pre></div><ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/gunicorn" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">gunicorn</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
 
-			<div class="tags">
-				
-					
-						<ul class="flat">
-							
-							<li><a href="/tags/gunicorn">gunicorn</a></li>
-							
-						</ul>
-					
-				
-			</div></div>
-	</div>
-	<div class="footer wrapper">
-	<nav class="nav">
-		<div>2022  © Copyright [Jingwei's](https://leijingwei.com) |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
-	</nav>
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/posts/gunicorn-installation/">02 Gunicorn installation</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/the-usage-of-gunicorn/">01 Gunicorn quick start</a>
+        </li>
+	    
+    </ul>
 </div>
 
+</aside>
 
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-86278584-8', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-<script>feather.replace()</script>
-</body>
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://leijingwei.com/" >
+    &copy;  © Copyright [Jingwei's](https://leijingwei.com) 2022 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div></div>
+  </div>
+</footer>
+
+  </body>
 </html>
