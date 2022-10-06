@@ -8,6 +8,16 @@
       <url>https://leijingwei.com/papermod-cover.png</url>
       <link>https://leijingwei.com/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://leijingwei.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 07 Oct 2022 01:45:59 +0800</lastBuildDate><atom:link href="https://leijingwei.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo</title>
+      <link>https://leijingwei.com/tags/hugo/</link>
+      <pubDate>Fri, 07 Oct 2022 01:45:59 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

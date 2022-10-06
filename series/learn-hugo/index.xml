@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Jingwei&#39;s</title>
-    <link>https://leijingwei.com/posts/</link>
-    <description>Recent content in Posts on Jingwei&#39;s</description>
+    <title>Learn Hugo on Jingwei&#39;s</title>
+    <link>https://leijingwei.com/series/learn-hugo/</link>
+    <description>Recent content in Learn Hugo on Jingwei&#39;s</description>
     <image>
       <url>https://leijingwei.com/papermod-cover.png</url>
       <link>https://leijingwei.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 07 Oct 2022 01:45:59 +0800</lastBuildDate><atom:link href="https://leijingwei.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Oct 2022 01:45:59 +0800</lastBuildDate><atom:link href="https://leijingwei.com/series/learn-hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A New Start</title>
       <link>https://leijingwei.com/posts/a-new-start/</link>
