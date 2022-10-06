@@ -169,73 +169,36 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>How to Use Ffmpeg
+    <h2>Install V2ray
     </h2>
   </header>
   <div class="entry-content">
-    <p>ffmpeg -version ffmpeg -i input.mp3 -t 30 output.mp3 ffmpeg -i input.mp3 -ss 00:00:04 -t 30 output.mp3 </p>
+    <p>I can not write this in Chinese , but I really want to write it down .
+first please get an ECS or VPS which can visit the world outside of the wall.
+CentOS 7.x &#43; Debian Ubuntu 18.x &#43; i choose Cent OS 8.3, so the following content is based on Cent OS 8.
+second download the installation script by this command.
+curl -O https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh then you will get a file which named ‘install-release....</p>
   </div>
-  <footer class="entry-footer"><span title='2022-10-07 02:13:39 +0800 CST'>October 7, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jingwei Lei</footer>
-  <a class="entry-link" aria-label="post link to How to Use Ffmpeg" href="https://leijingwei.com/posts/how-to-use-ffmpeg/"></a>
+  <footer class="entry-footer"><span title='2020-12-26 13:46:59 +0800 CST'>December 26, 2020</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jingwei Lei</footer>
+  <a class="entry-link" aria-label="post link to Install V2ray" href="https://leijingwei.com/posts/install-v2ray/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Hugo Quick Start
+    <h2>CentOS 8.3 upgrade default nginx
     </h2>
   </header>
   <div class="entry-content">
-    <p>hugo installlation brew install hugo hugo create site hugo new site leijingwei # a folder leijingwei will be created with a config.toml file hugo new site leijingwei -f yml # a folder leijingwei will be created with a config.yml file add a theme to your site Go to the https://themes.gohugo.io/ , find your favourite theme.
-hugo create post You will use this command to create a new post.
-hugo new posts/new-post....</p>
+    <p>Add the repo of University of Science and Technology of China vim /etc/yum.repos.d/nginx.repo Add the contents to the file：
+[nginx-mainline] name=nginx mainline repo baseurl=http://mirrors.ustc.edu.cn/nginx/mainline/centos/$releasever/$basearch/ gpgcheck=0 enabled=1 module_hotfixes=true Update the nginx yum update nginx Check the version of the nginx nginx -v </p>
   </div>
-  <footer class="entry-footer"><span title='2022-10-07 01:45:59 +0800 CST'>October 7, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jingwei Lei</footer>
-  <a class="entry-link" aria-label="post link to Hugo Quick Start" href="https://leijingwei.com/posts/hugo-quick-start/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>03 Gunicorn running
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Basic Usage gunicorn [OPTIONS] [WSGI_APP] The general format of WSGI_APP here is the module name plus the variable name. After version 20.1.0, this place became a config file. For example: the file name is test.py
-def app(environ, start_response): &#34;&#34;&#34;Simplest possible application object&#34;&#34;&#34; data = b&#39;Hello, World!\n&#39; status = &#39;200 OK&#39; response_headers = [ (&#39;Content-type&#39;, &#39;text/plain&#39;), (&#39;Content-Length&#39;, str(len(data))) ] start_response(status, response_headers) return iter([data]) At this point you want to start the program with the following command:...</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-04-11 21:38:22 +0800 CST'>April 11, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jingwei Lei</footer>
-  <a class="entry-link" aria-label="post link to 03 Gunicorn running" href="https://leijingwei.com/posts/gunicorn-running/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>02 Gunicorn installation
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Installation Requirement ：Python 3.x &gt;= 3.5 Install the latest gunicorn with the command as below：
-pip install gunicorn Installation from source code pip install git&#43;https://github.com/benoitc/gunicorn.git Installation DEV version from source code
-pip install -U git&#43;https://github.com/benoitc/gunicorn.git Async Workers If your application code may need to pause for a long time during request processing, you may also need to install Eventlet or Gevent. Check out the design documentation for details on when one of the other assist types needs to be considered....</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-04-11 21:08:16 +0800 CST'>April 11, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jingwei Lei</footer>
-  <a class="entry-link" aria-label="post link to 02 Gunicorn installation" href="https://leijingwei.com/posts/gunicorn-installation/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>01 Gunicorn quick start
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>About Gunicorn is the abbreviation of Green Unicorn, a WSGI Http server for Python under Unix systems. Its advantage is that it is relatively simple and easy to use on other web frameworks, such as flask, Django, etc.
-Install &amp; Start pip install gunicorn Install gunicorn using the above command, then write a simple python script to start the service
-# myapp.py def app(environ, start_response): data = b&#34;Hello, World!\n&#34; start_response(&#34;200 OK&#34;,[(&#34;Content-Type&#34;,&#34;text/plain&#34;),(&#34;Content-Length&#34;,str(len(data)))]) return iter([data]) # Start： gunicorn -w 4 myapp:app Console output：...</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-04-11 13:46:59 +0800 CST'>April 11, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jingwei Lei</footer>
-  <a class="entry-link" aria-label="post link to 01 Gunicorn quick start" href="https://leijingwei.com/posts/the-usage-of-gunicorn/"></a>
+  <footer class="entry-footer"><span title='2020-12-26 00:03:47 +0800 CST'>December 26, 2020</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jingwei Lei</footer>
+  <a class="entry-link" aria-label="post link to CentOS 8.3 upgrade default nginx" href="https://leijingwei.com/posts/nginx-update-centos8/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="next" href="https://leijingwei.com/posts/page/2/">Next&nbsp;&nbsp;»
+    <a class="prev" href="https://leijingwei.com/posts/">
+      «&nbsp;Prev&nbsp;
     </a>
   </nav>
 </footer>

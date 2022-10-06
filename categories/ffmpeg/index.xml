@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ffmpeg on Jingwei&#39;s</title>
+    <link>https://leijingwei.com/categories/ffmpeg/</link>
+    <description>Recent content in ffmpeg on Jingwei&#39;s</description>
+    <image>
+      <url>https://leijingwei.com/papermod-cover.png</url>
+      <link>https://leijingwei.com/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 07 Oct 2022 02:13:39 +0800</lastBuildDate><atom:link href="https://leijingwei.com/categories/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Use Ffmpeg</title>
+      <link>https://leijingwei.com/posts/how-to-use-ffmpeg/</link>
+      <pubDate>Fri, 07 Oct 2022 02:13:39 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/how-to-use-ffmpeg/</guid>
+      <description>ffmpeg -version ffmpeg -i input.mp3 -t 30 output.mp3 ffmpeg -i input.mp3 -ss 00:00:04 -t 30 output.mp3 </description>
+    </item>
+    
+  </channel>
+</rss>

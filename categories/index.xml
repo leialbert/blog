@@ -9,7 +9,16 @@
       <link>https://leijingwei.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 07 Oct 2022 01:45:59 +0800</lastBuildDate><atom:link href="https://leijingwei.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Oct 2022 02:13:39 +0800</lastBuildDate><atom:link href="https://leijingwei.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ffmpeg</title>
+      <link>https://leijingwei.com/categories/ffmpeg/</link>
+      <pubDate>Fri, 07 Oct 2022 02:13:39 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/categories/ffmpeg/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>hugo</title>
       <link>https://leijingwei.com/categories/hugo/</link>

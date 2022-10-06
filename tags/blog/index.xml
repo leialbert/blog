@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>blog on Jingwei&#39;s</title>
+    <link>https://leijingwei.com/tags/blog/</link>
+    <description>Recent content in blog on Jingwei&#39;s</description>
+    <image>
+      <url>https://leijingwei.com/papermod-cover.png</url>
+      <link>https://leijingwei.com/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 26 Dec 2020 00:03:47 +0800</lastBuildDate><atom:link href="https://leijingwei.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CentOS 8.3 upgrade default nginx</title>
+      <link>https://leijingwei.com/posts/nginx-update-centos8/</link>
+      <pubDate>Sat, 26 Dec 2020 00:03:47 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/nginx-update-centos8/</guid>
+      <description>CentOS 8.3 default yum&amp;#39;nginx version is too low</description>
+    </item>
+    
+  </channel>
+</rss>
