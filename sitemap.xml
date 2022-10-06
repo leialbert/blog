@@ -17,13 +17,7 @@
     <loc>https://leijingwei.com/</loc>
     <lastmod>2022-10-07T01:45:59+08:00</lastmod>
   </url><url>
-    <loc>https://leijingwei.com/series/learn-hugo/</loc>
-    <lastmod>2022-10-07T01:45:59+08:00</lastmod>
-  </url><url>
     <loc>https://leijingwei.com/posts/</loc>
-    <lastmod>2022-10-07T01:45:59+08:00</lastmod>
-  </url><url>
-    <loc>https://leijingwei.com/series/</loc>
     <lastmod>2022-10-07T01:45:59+08:00</lastmod>
   </url><url>
     <loc>https://leijingwei.com/tags/</loc>
@@ -32,5 +26,7 @@
     <loc>https://leijingwei.com/archives/</loc>
   </url><url>
     <loc>https://leijingwei.com/search/</loc>
+  </url><url>
+    <loc>https://leijingwei.com/series/</loc>
   </url>
 </urlset>
