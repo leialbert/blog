@@ -156,6 +156,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>01 Gunicorn quick start
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>About Gunicorn is the abbreviation of Green Unicorn, a WSGI Http server for Python under Unix systems. Its advantage is that it is relatively simple and easy to use on other web frameworks, such as flask, Django, etc.
+Install &amp; Start pip install gunicorn Install gunicorn using the above command, then write a simple python script to start the service
+# myapp.py def app(environ, start_response): data = b&#34;Hello, World!\n&#34; start_response(&#34;200 OK&#34;,[(&#34;Content-Type&#34;,&#34;text/plain&#34;),(&#34;Content-Length&#34;,str(len(data)))]) return iter([data]) # Start： gunicorn -w 4 myapp:app Console output：...</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-04-11 13:46:59 +0800 CST'>April 11, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jingwei Lei</footer>
+  <a class="entry-link" aria-label="post link to 01 Gunicorn quick start" href="https://leijingwei.com/posts/the-usage-of-gunicorn/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Install V2ray
     </h2>
   </header>

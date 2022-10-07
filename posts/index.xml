@@ -9,7 +9,17 @@
       <link>https://leijingwei.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 07 Oct 2022 02:13:39 +0800</lastBuildDate><atom:link href="https://leijingwei.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Oct 2022 11:39:18 +0800</lastBuildDate><atom:link href="https://leijingwei.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Remove and Block Aliyun</title>
+      <link>https://leijingwei.com/posts/remove-and-block-aliyun/</link>
+      <pubDate>Fri, 07 Oct 2022 11:39:18 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/remove-and-block-aliyun/</guid>
+      <description>Before you install your proxy app on Aliyun ECS, you should do something to block the aliyun&amp;rsquo;s built-in services.
+rm -rf /etc/motd &amp;amp;&amp;gt;/dev/null rm -fr /usr/local/{aegis,qcloud,cloudmonitor} &amp;amp;&amp;gt;/dev/null rm -rf /lib/systemd/system/aliyun.service &amp;amp;&amp;gt;/dev/null mkdir /usr/local/{aegis,cloudmonitor,qcloud} killall -9 sgagent &amp;amp;&amp;gt;/dev/null killall -9 barad_agent &amp;amp;&amp;gt;/dev/null killall -9 aliyun_assist_update &amp;amp;&amp;gt;/dev/null killall -9 aliyun_assist_update &amp;amp;&amp;gt;/dev/null killall -9 AliSecureCheckAdvanced &amp;amp;&amp;gt;/dev/null killall -9 CmsGoAgent.linux-amd64 &amp;amp;&amp;gt;/dev/null kill -9 `pidof YDLive` &amp;amp;&amp;gt;/dev/null kill -9 `pidof YDService` &amp;amp;&amp;gt;/dev/null kill -9 `pidof wrapper` &amp;amp;&amp;gt;/dev/null kill -9 `pidof AliYunDun` &amp;amp;&amp;gt;/dev/null kill -9 `pidof AliYunDunUpdate` &amp;amp;&amp;gt;/dev/null Don&amp;rsquo;t forget to enable your firewall to block the untrust access.</description>
+    </item>
+    
     <item>
       <title>How to Use Ffmpeg</title>
       <link>https://leijingwei.com/posts/how-to-use-ffmpeg/</link>

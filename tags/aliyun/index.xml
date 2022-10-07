@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>v2ray on Jingwei&#39;s</title>
-    <link>https://leijingwei.com/tags/v2ray/</link>
-    <description>Recent content in v2ray on Jingwei&#39;s</description>
+    <title>aliyun on Jingwei&#39;s</title>
+    <link>https://leijingwei.com/tags/aliyun/</link>
+    <description>Recent content in aliyun on Jingwei&#39;s</description>
     <image>
       <url>https://leijingwei.com/papermod-cover.png</url>
       <link>https://leijingwei.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 07 Oct 2022 11:39:18 +0800</lastBuildDate><atom:link href="https://leijingwei.com/tags/v2ray/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Oct 2022 11:39:18 +0800</lastBuildDate><atom:link href="https://leijingwei.com/tags/aliyun/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Remove and Block Aliyun</title>
       <link>https://leijingwei.com/posts/remove-and-block-aliyun/</link>
@@ -18,15 +18,6 @@
       <guid>https://leijingwei.com/posts/remove-and-block-aliyun/</guid>
       <description>Before you install your proxy app on Aliyun ECS, you should do something to block the aliyun&amp;rsquo;s built-in services.
 rm -rf /etc/motd &amp;amp;&amp;gt;/dev/null rm -fr /usr/local/{aegis,qcloud,cloudmonitor} &amp;amp;&amp;gt;/dev/null rm -rf /lib/systemd/system/aliyun.service &amp;amp;&amp;gt;/dev/null mkdir /usr/local/{aegis,cloudmonitor,qcloud} killall -9 sgagent &amp;amp;&amp;gt;/dev/null killall -9 barad_agent &amp;amp;&amp;gt;/dev/null killall -9 aliyun_assist_update &amp;amp;&amp;gt;/dev/null killall -9 aliyun_assist_update &amp;amp;&amp;gt;/dev/null killall -9 AliSecureCheckAdvanced &amp;amp;&amp;gt;/dev/null killall -9 CmsGoAgent.linux-amd64 &amp;amp;&amp;gt;/dev/null kill -9 `pidof YDLive` &amp;amp;&amp;gt;/dev/null kill -9 `pidof YDService` &amp;amp;&amp;gt;/dev/null kill -9 `pidof wrapper` &amp;amp;&amp;gt;/dev/null kill -9 `pidof AliYunDun` &amp;amp;&amp;gt;/dev/null kill -9 `pidof AliYunDunUpdate` &amp;amp;&amp;gt;/dev/null Don&amp;rsquo;t forget to enable your firewall to block the untrust access.</description>
-    </item>
-    
-    <item>
-      <title>Install V2ray</title>
-      <link>https://leijingwei.com/posts/install-v2ray/</link>
-      <pubDate>Sat, 26 Dec 2020 13:46:59 +0800</pubDate>
-      
-      <guid>https://leijingwei.com/posts/install-v2ray/</guid>
-      <description>Just in case</description>
     </item>
     
   </channel>
