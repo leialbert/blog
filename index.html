@@ -197,6 +197,18 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>How To Set Up Django with Postgres, Nginx, and Gunicorn on Debian 11
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Installing the Packages from the Debian Repositories sudo apt update sudo apt install python3-venv python3-dev libpq-dev postgresql postgresql-contrib nginx curl Creating the PostgreSQL Database and User sudo -u postgres psql CREATE DATABASE myproject; CREATE USER myprojectuser WITH PASSWORD &#39;password&#39;; ALTER ROLE myprojectuser SET client_encoding TO &#39;utf8&#39;; ALTER ROLE myprojectuser SET default_transaction_isolation TO &#39;read committed&#39;; ALTER ROLE myprojectuser SET timezone TO &#39;UTC&#39;; GRANT ALL PRIVILEGES ON DATABASE myproject TO myprojectuser; \q Creating a Python Virtual Environment for your Project mkdir ~/myprojectdir cd ~/myprojectdir python3 -m venv myprojectenv source myprojectenv/bin/activate pip install django gunicorn psycopg2-binary Creating and Configuring a New Django Project django-admin startproject myproject ~/myprojectdir nano ~/myprojectdir/myproject/settings....</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-10-09 02:13:39 +0800 CST'>October 9, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jingwei Lei</footer>
+  <a class="entry-link" aria-label="post link to How To Set Up Django with Postgres, Nginx, and Gunicorn on Debian 11" href="https://leijingwei.com/posts/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-debian-11/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Remove and Block Aliyun
     </h2>
   </header>
@@ -236,29 +248,17 @@ hugo new posts/new-post....</p>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>03 Gunicorn running
+    <h2>How to set up ssh keys on debian 11
     </h2>
   </header>
   <div class="entry-content">
-    <p>Basic Usage gunicorn [OPTIONS] [WSGI_APP] The general format of WSGI_APP here is the module name plus the variable name. After version 20.1.0, this place became a config file. For example: the file name is test.py
-def app(environ, start_response): &#34;&#34;&#34;Simplest possible application object&#34;&#34;&#34; data = b&#39;Hello, World!\n&#39; status = &#39;200 OK&#39; response_headers = [ (&#39;Content-type&#39;, &#39;text/plain&#39;), (&#39;Content-Length&#39;, str(len(data))) ] start_response(status, response_headers) return iter([data]) At this point you want to start the program with the following command:...</p>
+    <p>Step 1 Create the RSA Key Pair The first step is to create a key pair on the client machine (usually your computer):
+ssh-keygen By default ssh-keygen will create a 3072-bit RSA key pair, which is secure enough for most use cases (you may optionally pass in the -b 4096 flag to create a larger 4096-bit key).
+After entering the command, you should see the following output:
+OutputGenerating public/private rsa key pair....</p>
   </div>
-  <footer class="entry-footer"><span title='2021-04-11 21:38:22 +0800 CST'>April 11, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jingwei Lei</footer>
-  <a class="entry-link" aria-label="post link to 03 Gunicorn running" href="https://leijingwei.com/posts/gunicorn-running/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>02 Gunicorn installation
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Installation Requirement ：Python 3.x &gt;= 3.5 Install the latest gunicorn with the command as below：
-pip install gunicorn Installation from source code pip install git&#43;https://github.com/benoitc/gunicorn.git Installation DEV version from source code
-pip install -U git&#43;https://github.com/benoitc/gunicorn.git Async Workers If your application code may need to pause for a long time during request processing, you may also need to install Eventlet or Gevent. Check out the design documentation for details on when one of the other assist types needs to be considered....</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-04-11 21:08:16 +0800 CST'>April 11, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jingwei Lei</footer>
-  <a class="entry-link" aria-label="post link to 02 Gunicorn installation" href="https://leijingwei.com/posts/gunicorn-installation/"></a>
+  <footer class="entry-footer"><span title='2021-10-07 02:13:39 +0800 CST'>October 7, 2021</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;Jingwei Lei</footer>
+  <a class="entry-link" aria-label="post link to How to set up ssh keys on debian 11" href="https://leijingwei.com/posts/how-to-set-up-ssh-keys-on-debian-11/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

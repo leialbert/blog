@@ -154,6 +154,18 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2>How To Set Up Django with Postgres, Nginx, and Gunicorn on Debian 11
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Installing the Packages from the Debian Repositories sudo apt update sudo apt install python3-venv python3-dev libpq-dev postgresql postgresql-contrib nginx curl Creating the PostgreSQL Database and User sudo -u postgres psql CREATE DATABASE myproject; CREATE USER myprojectuser WITH PASSWORD &#39;password&#39;; ALTER ROLE myprojectuser SET client_encoding TO &#39;utf8&#39;; ALTER ROLE myprojectuser SET default_transaction_isolation TO &#39;read committed&#39;; ALTER ROLE myprojectuser SET timezone TO &#39;UTC&#39;; GRANT ALL PRIVILEGES ON DATABASE myproject TO myprojectuser; \q Creating a Python Virtual Environment for your Project mkdir ~/myprojectdir cd ~/myprojectdir python3 -m venv myprojectenv source myprojectenv/bin/activate pip install django gunicorn psycopg2-binary Creating and Configuring a New Django Project django-admin startproject myproject ~/myprojectdir nano ~/myprojectdir/myproject/settings....</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-10-09 02:13:39 +0800 CST'>October 9, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jingwei Lei</footer>
+  <a class="entry-link" aria-label="post link to How To Set Up Django with Postgres, Nginx, and Gunicorn on Debian 11" href="https://leijingwei.com/posts/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-debian-11/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2>03 Gunicorn running
     </h2>
   </header>
