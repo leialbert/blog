@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>sap on Jingwei&#39;s</title>
+    <link>https://leijingwei.com/tags/sap/</link>
+    <description>Recent content in sap on Jingwei&#39;s</description>
+    <image>
+      <url>https://leijingwei.com/papermod-cover.png</url>
+      <link>https://leijingwei.com/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 22 Oct 2022 02:10:39 +0800</lastBuildDate><atom:link href="https://leijingwei.com/tags/sap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Client Copy in SAP</title>
+      <link>https://leijingwei.com/posts/client-copy-in-sap/</link>
+      <pubDate>Sat, 22 Oct 2022 02:10:39 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/client-copy-in-sap/</guid>
+      <description>Overview With SAP_BASIS 7.54 (SAP S/4HANA 1909), SAP delivers new client management tools based on new common architecture. They are a complete redesign of the previous client copy (transactions SCCL, SCC9, SCC5, …). The new tools replace the old client copy and also offer new functions. They are optimized for increased performance, process automation and stability. The log of the client copy has also been completely revised and is now much more meaningful and easier to read, so that troubleshooting is much easier.</description>
+    </item>
+    
+    <item>
+      <title>How to Configure &amp; Test RFC Connection in SAP</title>
+      <link>https://leijingwei.com/posts/how-to-configure-rfc-connection-in-sap/</link>
+      <pubDate>Sat, 22 Oct 2022 02:10:39 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/how-to-configure-rfc-connection-in-sap/</guid>
+      <description>Step 1: Procedure to setup an RFC connection: Enter Transaction Code SM59
+In the SM59 screen, you can navigate through already created RFCs connection with the help of option tree, which is a menu-based method to organize all the connections by categories.
+Click the ‘CREATE‘ button. In the next screen , Enter –
+RFC Destination – Name of Destination (could be Target System ID or anything relevant) Connection Type – here we choose one of the types (as explained previously) of RFC connections as per requirements.</description>
+    </item>
+    
+  </channel>
+</rss>
