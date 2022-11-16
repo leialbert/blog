@@ -9,7 +9,19 @@
       <link>https://leijingwei.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 22 Oct 2022 02:10:39 +0800</lastBuildDate><atom:link href="https://leijingwei.com/categories/sap/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Nov 2022 02:10:39 +0800</lastBuildDate><atom:link href="https://leijingwei.com/categories/sap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>how to allow specific tcodes make changes on SAP PRD</title>
+      <link>https://leijingwei.com/posts/how-to-allow-specific-tcodes-make-changes-on-sap-prd/</link>
+      <pubDate>Wed, 16 Nov 2022 02:10:39 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/how-to-allow-specific-tcodes-make-changes-on-sap-prd/</guid>
+      <description>For some reason, I worked as an SAP basis consultant. The FICO consultant asked me to allow her open posting periods on SAP production client as the PRD client is not modifiable. I will tell you how to achieve this.
+find the relevant table of this T-code The T-code they want to run on production client is OB52.
+Run this T-code and find the technical information of one record.
+The table name is V_T001B_COFI, and if you know FICO well, you will know there is another table V_T001B_COFIB also related to this T-Code.</description>
+    </item>
+    
     <item>
       <title>Client Copy in SAP</title>
       <link>https://leijingwei.com/posts/client-copy-in-sap/</link>
