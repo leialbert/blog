@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>linux | Jingwei&#39;s</title>
+<title>Linux | Jingwei&#39;s</title>
 <meta name="keywords" content="">
 <meta name="description" content="Stay Hungry, Stay Foolish.">
 <meta name="author" content="Jingwei Lei">
@@ -55,7 +55,7 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="linux" />
+</noscript><meta property="og:title" content="Linux" />
 <meta property="og:description" content="Stay Hungry, Stay Foolish." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://leijingwei.com/categories/linux/" /><meta property="og:image" content="https://leijingwei.com/papermod-cover.png"/>
@@ -63,7 +63,7 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://leijingwei.com/papermod-cover.png"/>
 
-<meta name="twitter:title" content="linux"/>
+<meta name="twitter:title" content="Linux"/>
 <meta name="twitter:description" content="Stay Hungry, Stay Foolish."/>
 
 </head>
@@ -140,7 +140,7 @@
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="https://leijingwei.com">Home</a>&nbsp;»&nbsp;<a href="https://leijingwei.com/categories/">Categories</a></div>
   <h1>
-    linux
+    Linux
     <a href="index.xml" title="RSS" aria-label="RSS">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" height="23">
@@ -151,6 +151,26 @@
     </a>
   </h1>
 </header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>How to Deploy Prometheus on Your Server
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Download all required packages Go to the download page, find these packages as below,
+https://prometheus.io/download/
+Prometheus
+https://github.com/prometheus/prometheus/releases/download/v2.37.5/prometheus-2.37.5.linux-amd64.tar.gz
+Alertmanager
+https://github.com/prometheus/alertmanager/releases/download/v0.24.0/alertmanager-0.24.0.linux-amd64.tar.gz
+Node_exporter
+https://github.com/prometheus/node_exporter/releases/download/v1.5.0/node_exporter-1.5.0.linux-amd64.tar.gz
+Allow 9090 port open ufw allow 9090/tcp ufw reload Configure and start tar xvfz prometheus-2.37.5.linux-amd64.tar.gz cd prometheus-2.37.5.linux-amd64/ mv prometheus-2.37.5.linux-amd64 /usr/local/prometheus useradd -M -s /sbin/nologin prometheus cd /usr/local/prometheus mkdir data chown -R prometheus:prometheus /usr/local/prometheus Add to system service [Unit] Description=Prometheus After=network.target [Service] User=prometheus Group=prometheus WorkingDirectory=/usr/local/prometheus ExecStart=/usr/local/prometheus/prometheus [Install] WantedBy=multi-user.target Save the file to /usr/lib/systemd/system/prometheus....</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-12-18 20:22:49 +0800 CST'>December 18, 2022</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Jingwei Lei</footer>
+  <a class="entry-link" aria-label="post link to How to Deploy Prometheus on Your Server" href="https://leijingwei.com/posts/how-to-deploy-prometheus-on-your-server/"></a>
+</article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">

@@ -156,6 +156,19 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Remove and Block Aliyun
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Before you install your proxy app on Aliyun ECS, you should do something to block the aliyun’s built-in services.
+rm -rf /etc/motd &amp;&gt;/dev/null rm -fr /usr/local/{aegis,qcloud,cloudmonitor} &amp;&gt;/dev/null rm -rf /lib/systemd/system/aliyun.service &amp;&gt;/dev/null mkdir /usr/local/{aegis,cloudmonitor,qcloud} killall -9 sgagent &amp;&gt;/dev/null killall -9 barad_agent &amp;&gt;/dev/null killall -9 aliyun_assist_update &amp;&gt;/dev/null killall -9 aliyun_assist_update &amp;&gt;/dev/null killall -9 AliSecureCheckAdvanced &amp;&gt;/dev/null killall -9 CmsGoAgent.linux-amd64 &amp;&gt;/dev/null kill -9 `pidof YDLive` &amp;&gt;/dev/null kill -9 `pidof YDService` &amp;&gt;/dev/null kill -9 `pidof wrapper` &amp;&gt;/dev/null kill -9 `pidof AliYunDun` &amp;&gt;/dev/null kill -9 `pidof AliYunDunUpdate` &amp;&gt;/dev/null Don’t forget to enable your firewall to block the untrust access....</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-10-07 11:39:18 +0800 CST'>October 7, 2022</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Jingwei Lei</footer>
+  <a class="entry-link" aria-label="post link to Remove and Block Aliyun" href="https://leijingwei.com/posts/remove-and-block-aliyun/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>How to Use Ffmpeg
     </h2>
   </header>
@@ -206,20 +219,6 @@ def app(environ, start_response): &#34;&#34;&#34;Simplest possible application o
   </div>
   <footer class="entry-footer"><span title='2021-04-11 21:38:22 +0800 CST'>April 11, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jingwei Lei</footer>
   <a class="entry-link" aria-label="post link to 03 Gunicorn running" href="https://leijingwei.com/posts/gunicorn-running/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>02 Gunicorn installation
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Installation Requirement ：Python 3.x &gt;= 3.5 Install the latest gunicorn with the command as below：
-pip install gunicorn Installation from source code pip install git&#43;https://github.com/benoitc/gunicorn.git Installation DEV version from source code
-pip install -U git&#43;https://github.com/benoitc/gunicorn.git Async Workers If your application code may need to pause for a long time during request processing, you may also need to install Eventlet or Gevent. Check out the design documentation for details on when one of the other assist types needs to be considered....</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-04-11 21:08:16 +0800 CST'>April 11, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jingwei Lei</footer>
-  <a class="entry-link" aria-label="post link to 02 Gunicorn installation" href="https://leijingwei.com/posts/gunicorn-installation/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

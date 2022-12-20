@@ -169,6 +169,26 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>How to Deploy Prometheus on Your Server
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Download all required packages Go to the download page, find these packages as below,
+https://prometheus.io/download/
+Prometheus
+https://github.com/prometheus/prometheus/releases/download/v2.37.5/prometheus-2.37.5.linux-amd64.tar.gz
+Alertmanager
+https://github.com/prometheus/alertmanager/releases/download/v0.24.0/alertmanager-0.24.0.linux-amd64.tar.gz
+Node_exporter
+https://github.com/prometheus/node_exporter/releases/download/v1.5.0/node_exporter-1.5.0.linux-amd64.tar.gz
+Allow 9090 port open ufw allow 9090/tcp ufw reload Configure and start tar xvfz prometheus-2.37.5.linux-amd64.tar.gz cd prometheus-2.37.5.linux-amd64/ mv prometheus-2.37.5.linux-amd64 /usr/local/prometheus useradd -M -s /sbin/nologin prometheus cd /usr/local/prometheus mkdir data chown -R prometheus:prometheus /usr/local/prometheus Add to system service [Unit] Description=Prometheus After=network.target [Service] User=prometheus Group=prometheus WorkingDirectory=/usr/local/prometheus ExecStart=/usr/local/prometheus/prometheus [Install] WantedBy=multi-user.target Save the file to /usr/lib/systemd/system/prometheus....</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-12-18 20:22:49 +0800 CST'>December 18, 2022</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Jingwei Lei</footer>
+  <a class="entry-link" aria-label="post link to How to Deploy Prometheus on Your Server" href="https://leijingwei.com/posts/how-to-deploy-prometheus-on-your-server/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>how to allow specific tcodes make changes on SAP PRD
     </h2>
   </header>
@@ -219,19 +239,6 @@ RFC Destination – Name of Destination (could be Target System ID or anything r
   </div>
   <footer class="entry-footer"><span title='2022-10-09 02:13:39 +0800 CST'>October 9, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jingwei Lei</footer>
   <a class="entry-link" aria-label="post link to How To Set Up Django with Postgres, Nginx, and Gunicorn on Debian 11" href="https://leijingwei.com/posts/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-debian-11/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Remove and Block Aliyun
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Before you install your proxy app on Aliyun ECS, you should do something to block the aliyun’s built-in services.
-rm -rf /etc/motd &amp;&gt;/dev/null rm -fr /usr/local/{aegis,qcloud,cloudmonitor} &amp;&gt;/dev/null rm -rf /lib/systemd/system/aliyun.service &amp;&gt;/dev/null mkdir /usr/local/{aegis,cloudmonitor,qcloud} killall -9 sgagent &amp;&gt;/dev/null killall -9 barad_agent &amp;&gt;/dev/null killall -9 aliyun_assist_update &amp;&gt;/dev/null killall -9 aliyun_assist_update &amp;&gt;/dev/null killall -9 AliSecureCheckAdvanced &amp;&gt;/dev/null killall -9 CmsGoAgent.linux-amd64 &amp;&gt;/dev/null kill -9 `pidof YDLive` &amp;&gt;/dev/null kill -9 `pidof YDService` &amp;&gt;/dev/null kill -9 `pidof wrapper` &amp;&gt;/dev/null kill -9 `pidof AliYunDun` &amp;&gt;/dev/null kill -9 `pidof AliYunDunUpdate` &amp;&gt;/dev/null Don’t forget to enable your firewall to block the untrust access....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-10-07 11:39:18 +0800 CST'>October 7, 2022</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Jingwei Lei</footer>
-  <a class="entry-link" aria-label="post link to Remove and Block Aliyun" href="https://leijingwei.com/posts/remove-and-block-aliyun/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
