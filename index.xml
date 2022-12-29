@@ -9,7 +9,25 @@
       <link>https://leijingwei.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 18 Dec 2022 20:22:49 +0800</lastBuildDate><atom:link href="https://leijingwei.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Dec 2022 21:35:02 +0800</lastBuildDate><atom:link href="https://leijingwei.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Integrated Node Exporter on Openwrt </title>
+      <link>https://leijingwei.com/posts/integrated-node-exporter-on-openwrt-/</link>
+      <pubDate>Thu, 29 Dec 2022 21:35:02 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/integrated-node-exporter-on-openwrt-/</guid>
+      <description>run node_exporter on an OpenWrt router</description>
+    </item>
+    
+    <item>
+      <title>Configure Grafana Alerting Rules</title>
+      <link>https://leijingwei.com/posts/configure-grafana-alerting-rules/</link>
+      <pubDate>Tue, 20 Dec 2022 11:53:19 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/configure-grafana-alerting-rules/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>How to Deploy Prometheus on Your Server</title>
       <link>https://leijingwei.com/posts/how-to-deploy-prometheus-on-your-server/</link>

@@ -2,25 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://leijingwei.com/posts/integrated-node-exporter-on-openwrt-/</loc>
+    <lastmod>2022-12-29T21:35:02+08:00</lastmod>
+  </url><url>
+    <loc>https://leijingwei.com/</loc>
+    <lastmod>2022-12-29T21:35:02+08:00</lastmod>
+  </url><url>
+    <loc>https://leijingwei.com/tags/linux/</loc>
+    <lastmod>2022-12-29T21:35:02+08:00</lastmod>
+  </url><url>
+    <loc>https://leijingwei.com/posts/</loc>
+    <lastmod>2022-12-29T21:35:02+08:00</lastmod>
+  </url><url>
+    <loc>https://leijingwei.com/tags/</loc>
+    <lastmod>2022-12-29T21:35:02+08:00</lastmod>
+  </url><url>
+    <loc>https://leijingwei.com/posts/configure-grafana-alerting-rules/</loc>
+    <lastmod>2022-12-20T11:53:19+08:00</lastmod>
+  </url><url>
     <loc>https://leijingwei.com/categories/</loc>
     <lastmod>2022-12-18T20:22:49+08:00</lastmod>
   </url><url>
     <loc>https://leijingwei.com/posts/how-to-deploy-prometheus-on-your-server/</loc>
     <lastmod>2022-12-18T20:22:49+08:00</lastmod>
   </url><url>
-    <loc>https://leijingwei.com/</loc>
-    <lastmod>2022-12-18T20:22:49+08:00</lastmod>
-  </url><url>
-    <loc>https://leijingwei.com/tags/linux/</loc>
-    <lastmod>2022-12-18T20:22:49+08:00</lastmod>
-  </url><url>
     <loc>https://leijingwei.com/categories/linux/</loc>
-    <lastmod>2022-12-18T20:22:49+08:00</lastmod>
-  </url><url>
-    <loc>https://leijingwei.com/posts/</loc>
-    <lastmod>2022-12-18T20:22:49+08:00</lastmod>
-  </url><url>
-    <loc>https://leijingwei.com/tags/</loc>
     <lastmod>2022-12-18T20:22:49+08:00</lastmod>
   </url><url>
     <loc>https://leijingwei.com/posts/how-to-allow-specific-tcodes-make-changes-on-sap-prd/</loc>

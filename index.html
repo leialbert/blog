@@ -197,6 +197,33 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Integrated Node Exporter on Openwrt 
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Prerequisites You should have a public IP address for your router, or you should use the DDNS to do a port forward to your router.
+Interacting with OpenWrt login in your router
+opkg update opkg install prometheus-node-exporter-lua opkg install prometheus-node-exporter-lua-nat_traffic opkg install prometheus-node-exporter-lua-netstat opkg install prometheus-node-exporter-lua-openwrt opkg install prometheus-node-exporter-lua-wifi opkg install prometheus-node-exporter-lua-wifi_stations test curl localhost:9100/metrics change the port and interface vim /etc/config/prometheus-node-exporter-lua You will see the contents as follow.
+config prometheus-node-exporter-lua &#39;main&#39; option listen_ipv6 &#39;0&#39; option listen_port &#39;9100&#39; option listen_interface &#39;lan&#39; change the listen_interface to lan which already changed and showed above....</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-12-29 21:35:02 +0800 CST'>December 29, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jingwei Lei</footer>
+  <a class="entry-link" aria-label="post link to Integrated Node Exporter on Openwrt " href="https://leijingwei.com/posts/integrated-node-exporter-on-openwrt-/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Configure Grafana Alerting Rules<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p></p>
+  </div>
+  <footer class="entry-footer"><span title='2022-12-20 11:53:19 +0800 CST'>December 20, 2022</span>&nbsp;·&nbsp;0 min&nbsp;·&nbsp;Jingwei Lei</footer>
+  <a class="entry-link" aria-label="post link to Configure Grafana Alerting Rules" href="https://leijingwei.com/posts/configure-grafana-alerting-rules/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>How to Deploy Prometheus on Your Server
     </h2>
   </header>
@@ -240,33 +267,6 @@ The table name is V_T001B_COFI, and if you know FICO well, you will know there i
   </div>
   <footer class="entry-footer"><span title='2022-10-22 02:10:39 +0800 CST'>October 22, 2022</span>&nbsp;·&nbsp;21 min&nbsp;·&nbsp;Jingwei Lei</footer>
   <a class="entry-link" aria-label="post link to Client Copy in SAP" href="https://leijingwei.com/posts/client-copy-in-sap/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>How to Configure &amp; Test RFC Connection in SAP
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Step 1: Procedure to setup an RFC connection: Enter Transaction Code SM59
-In the SM59 screen, you can navigate through already created RFCs connection with the help of option tree, which is a menu-based method to organize all the connections by categories.
-Click the ‘CREATE‘ button. In the next screen , Enter –
-RFC Destination – Name of Destination (could be Target System ID or anything relevant) Connection Type – here we choose one of the types (as explained previously) of RFC connections as per requirements....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-10-22 02:10:39 +0800 CST'>October 22, 2022</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Jingwei Lei</footer>
-  <a class="entry-link" aria-label="post link to How to Configure &amp; Test RFC Connection in SAP" href="https://leijingwei.com/posts/how-to-configure-rfc-connection-in-sap/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>How To Set Up Django with Postgres, Nginx, and Gunicorn on Debian 11
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Installing the Packages from the Debian Repositories sudo apt update sudo apt install python3-venv python3-dev libpq-dev postgresql postgresql-contrib nginx curl Creating the PostgreSQL Database and User sudo -u postgres psql CREATE DATABASE myproject; CREATE USER myprojectuser WITH PASSWORD &#39;password&#39;; ALTER ROLE myprojectuser SET client_encoding TO &#39;utf8&#39;; ALTER ROLE myprojectuser SET default_transaction_isolation TO &#39;read committed&#39;; ALTER ROLE myprojectuser SET timezone TO &#39;UTC&#39;; GRANT ALL PRIVILEGES ON DATABASE myproject TO myprojectuser; \q Creating a Python Virtual Environment for your Project mkdir ~/myprojectdir cd ~/myprojectdir python3 -m venv myprojectenv source myprojectenv/bin/activate pip install django gunicorn psycopg2-binary Creating and Configuring a New Django Project django-admin startproject myproject ~/myprojectdir nano ~/myprojectdir/myproject/settings....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-10-09 02:13:39 +0800 CST'>October 9, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jingwei Lei</footer>
-  <a class="entry-link" aria-label="post link to How To Set Up Django with Postgres, Nginx, and Gunicorn on Debian 11" href="https://leijingwei.com/posts/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-debian-11/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

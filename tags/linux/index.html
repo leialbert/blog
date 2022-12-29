@@ -154,6 +154,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2>Integrated Node Exporter on Openwrt 
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Prerequisites You should have a public IP address for your router, or you should use the DDNS to do a port forward to your router.
+Interacting with OpenWrt login in your router
+opkg update opkg install prometheus-node-exporter-lua opkg install prometheus-node-exporter-lua-nat_traffic opkg install prometheus-node-exporter-lua-netstat opkg install prometheus-node-exporter-lua-openwrt opkg install prometheus-node-exporter-lua-wifi opkg install prometheus-node-exporter-lua-wifi_stations test curl localhost:9100/metrics change the port and interface vim /etc/config/prometheus-node-exporter-lua You will see the contents as follow.
+config prometheus-node-exporter-lua &#39;main&#39; option listen_ipv6 &#39;0&#39; option listen_port &#39;9100&#39; option listen_interface &#39;lan&#39; change the listen_interface to lan which already changed and showed above....</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-12-29 21:35:02 +0800 CST'>December 29, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jingwei Lei</footer>
+  <a class="entry-link" aria-label="post link to Integrated Node Exporter on Openwrt " href="https://leijingwei.com/posts/integrated-node-exporter-on-openwrt-/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2>How to Deploy Prometheus on Your Server
     </h2>
   </header>
