@@ -20,15 +20,6 @@
     </item>
     
     <item>
-      <title>Configure Grafana Alerting Rules</title>
-      <link>https://leijingwei.com/posts/configure-grafana-alerting-rules/</link>
-      <pubDate>Tue, 20 Dec 2022 11:53:19 +0800</pubDate>
-      
-      <guid>https://leijingwei.com/posts/configure-grafana-alerting-rules/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>How to Deploy Prometheus on Your Server</title>
       <link>https://leijingwei.com/posts/how-to-deploy-prometheus-on-your-server/</link>
       <pubDate>Sun, 18 Dec 2022 20:22:49 +0800</pubDate>
