@@ -9,22 +9,22 @@
       <link>https://leijingwei.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 18 Dec 2022 20:22:49 +0800</lastBuildDate><atom:link href="https://leijingwei.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Jan 2023 00:38:01 +0800</lastBuildDate><atom:link href="https://leijingwei.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sap</title>
+      <link>https://leijingwei.com/categories/sap/</link>
+      <pubDate>Wed, 25 Jan 2023 00:38:01 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/categories/sap/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Linux</title>
       <link>https://leijingwei.com/categories/linux/</link>
       <pubDate>Sun, 18 Dec 2022 20:22:49 +0800</pubDate>
       
       <guid>https://leijingwei.com/categories/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sap</title>
-      <link>https://leijingwei.com/categories/sap/</link>
-      <pubDate>Wed, 16 Nov 2022 02:10:39 +0800</pubDate>
-      
-      <guid>https://leijingwei.com/categories/sap/</guid>
       <description></description>
     </item>
     

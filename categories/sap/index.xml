@@ -9,7 +9,16 @@
       <link>https://leijingwei.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 16 Nov 2022 02:10:39 +0800</lastBuildDate><atom:link href="https://leijingwei.com/categories/sap/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Jan 2023 00:38:01 +0800</lastBuildDate><atom:link href="https://leijingwei.com/categories/sap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install the Latest SAP GUI 780 for MAC</title>
+      <link>https://leijingwei.com/posts/install-the-latest-sap-gui-780-for-mac/</link>
+      <pubDate>Wed, 25 Jan 2023 00:38:01 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/install-the-latest-sap-gui-780-for-mac/</guid>
+      <description>The latest SAP GUI 780</description>
+    </item>
+    
     <item>
       <title>how to allow specific tcodes make changes on SAP PRD</title>
       <link>https://leijingwei.com/posts/how-to-allow-specific-tcodes-make-changes-on-sap-prd/</link>

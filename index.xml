@@ -9,7 +9,16 @@
       <link>https://leijingwei.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 29 Dec 2022 21:35:02 +0800</lastBuildDate><atom:link href="https://leijingwei.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Jan 2023 00:38:01 +0800</lastBuildDate><atom:link href="https://leijingwei.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install the Latest SAP GUI 780 for MAC</title>
+      <link>https://leijingwei.com/posts/install-the-latest-sap-gui-780-for-mac/</link>
+      <pubDate>Wed, 25 Jan 2023 00:38:01 +0800</pubDate>
+      
+      <guid>https://leijingwei.com/posts/install-the-latest-sap-gui-780-for-mac/</guid>
+      <description>The latest SAP GUI 780</description>
+    </item>
+    
     <item>
       <title>Integrated Node Exporter on Openwrt </title>
       <link>https://leijingwei.com/posts/integrated-node-exporter-on-openwrt-/</link>
